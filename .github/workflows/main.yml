@@ -31,3 +31,6 @@ jobs:
           git add data/index.json
           git commit -m "Update index.json [skip ci]" || echo "No changes"
           git push
+
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
