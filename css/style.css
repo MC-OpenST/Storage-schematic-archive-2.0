@@ -1,0 +1,14 @@
+body { font-family: Arial; margin:0; padding:0; background:#f9f9f9; color:#333; }
+header { background:#4a90e2; color:white; padding:16px; display:flex; justify-content:space-between; align-items:center; }
+header input { padding:6px 12px; border-radius:4px; border:none; font-size:14px; }
+#tags { padding:8px 16px; display:flex; flex-wrap:wrap; gap:8px; background:#fff; border-bottom:1px solid #ddd; }
+#tags button { background:#eee; border:none; border-radius:4px; padding:6px 12px; cursor:pointer; transition:0.2s; }
+#tags button:hover { background:#4a90e2; color:white; }
+#file-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:12px; padding:16px; }
+.file-card { background:white; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); padding:8px; text-align:center; }
+.file-card img { width:140px; height:140px; object-fit:cover; border-radius:4px; margin-bottom:8px; }
+.file-card .filename { font-weight:bold; margin-bottom:6px; word-break:break-word; }
+.file-card button { margin:2px; padding:4px 8px; border:none; border-radius:4px; background:#4a90e2; color:white; cursor:pointer; font-size:12px; transition:0.2s; }
+.file-card button:hover { background:#357ab8; }
+footer { text-align:center; padding:16px; background:#f0f0f0; font-size:12px; color:#666; }
+@media(max-width:480px){ #file-grid { grid-template-columns:1fr; } }
