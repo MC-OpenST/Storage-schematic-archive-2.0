@@ -3,14 +3,15 @@ name: Generate Index JSON
 on:
   push:
     branches:
-      - main
-  workflow_dispatch:
+      - main   # 每次 push 到 main 自动触发
+  workflow_dispatch: # 也可以手动触发
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Set up Node.js
@@ -19,18 +20,21 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: npm install
+        run: npm install || echo "No dependencies"
 
       - name: Generate index.json
         run: node scripts/generate_index.js
 
-      - name: Commit index.json
+      - name: Configure Git
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+
+      - name: Commit and push index.json
+        run: |
           git add data/index.json
           git commit -m "Update index.json [skip ci]" || echo "No changes"
           git push
-
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
