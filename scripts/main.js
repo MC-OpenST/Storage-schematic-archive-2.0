@@ -1,66 +1,112 @@
-async function loadFiles() {
-    const res = await fetch("https://<worker-domain>/list");
-    const files = await res.json();
+const FILE_LIST_URL = "https://openst.weizhihan3.workers.dev/list?ts=169347265456";
+const TAGS = ['大宗','盒仓','MIS','MBS','细雪展示']; // 前端硬编码标签
+const WORKER_BASE = "https://openst.weizhihan3.workers.dev";
 
-    const tags = [...new Set(files.map(f=>f.tag))];
-    const tagsContainer = document.getElementById("tags");
-    tagsContainer.innerHTML = "";
-    tags.forEach(tag=>{
+async function loadFiles() {
+    const filesRes = await fetch(FILE_LIST_URL);
+    const files = await filesRes.json();
+
+    const container = document.getElementById("file-list");
+    const tagContainer = document.getElementById("tag-list");
+    const searchInput = document.getElementById("search-input");
+
+    // 渲染标签按钮
+    TAGS.forEach(tag => {
         const btn = document.createElement("button");
         btn.textContent = tag;
-        btn.onclick = ()=>renderFiles(files.filter(f=>f.tag===tag));
-        tagsContainer.appendChild(btn);
+        btn.addEventListener("click", () => filterFiles(tag));
+        tagContainer.appendChild(btn);
+    });
+    // 添加清除筛选按钮
+    const clearBtn = document.createElement("button");
+    clearBtn.textContent = "清除筛选";
+    clearBtn.addEventListener("click", () => renderFiles(files));
+    tagContainer.appendChild(clearBtn);
+
+    function filterFiles(keyword) {
+        container.innerHTML = "";
+        const filtered = files.filter(f => f.name.includes(keyword));
+        renderFiles(filtered);
+    }
+
+    function renderFiles(list) {
+        container.innerHTML = "";
+        list.forEach(file => {
+            // 如果是 png 文件，直接跳过
+            if(file.name.endsWith(".png")) return;
+
+            const item = document.createElement("div");
+            item.className = "file-item";
+
+            const nameEl = document.createElement("div");
+            nameEl.className = "filename";
+            nameEl.textContent = file.name;
+            item.appendChild(nameEl);
+
+            const img = document.createElement("img");
+            const previewPath = file.preview.replace(/^files\//, ''); // 去掉前缀
+            const pathParts = file.preview.split('/');
+            const encodedPath = pathParts.map(encodeURIComponent).join('/');
+            img.src = `${WORKER_BASE}/${encodedPath}`;
+            img.width = 300;
+            img.height = 200;
+            img.addEventListener("click", () => showModal(`${WORKER_BASE}/files/${encodeURIComponent(previewPath)}`));
+            item.appendChild(img);
+
+            const btnContainer = document.createElement("div");
+
+            // 下载按钮
+            const downloadBtn = document.createElement("button");
+            downloadBtn.textContent = "下载";
+            // 根据 path 动态生成下载 URL
+            downloadBtn.onclick = () => window.open(`https://openst.weizhihan3.workers.dev/dl/${file.path}`, "_blank");
+            btnContainer.appendChild(downloadBtn);
+
+            // 复制链接按钮
+            const copyBtn = document.createElement("button");
+            copyBtn.textContent = "复制链接";
+            copyBtn.onclick = () => navigator.clipboard.writeText(`https://openst.weizhihan3.workers.dev/dl/${file.path}`);
+            btnContainer.appendChild(copyBtn);
+
+            if(file.schematio){
+                const jumpBtn = document.createElement("a");
+                jumpBtn.textContent = "3D预览";
+                jumpBtn.href = file.schematio;
+                jumpBtn.target = "_blank";
+                btnContainer.appendChild(jumpBtn);
+            }
+
+            item.appendChild(btnContainer);
+            container.appendChild(item);
+        });
+    }
+
+    // 搜索功能
+    searchInput.addEventListener("input", e => {
+        const keyword = e.target.value.trim();
+        container.innerHTML = ""; // **清空之前的卡片**
+        if(keyword === "") renderFiles(files);
+        else filterFiles(keyword);
     });
 
     renderFiles(files);
-
-    document.getElementById("search").oninput = e=>{
-        const keyword = e.target.value.toLowerCase();
-        renderFiles(files.filter(f=>f.name.toLowerCase().includes(keyword)));
-    };
 }
 
-function renderFiles(files) {
-    const container = document.getElementById("file-grid");
-    container.innerHTML = "";
-    files.forEach(f=>{
-        const card = document.createElement("div");
-        card.className = "file-card";
-
-        const title = document.createElement("div");
-        title.className = "filename";
-        title.textContent = f.name;
-        card.appendChild(title);
-
-        // 缩略图
-        if(f.preview){
-            const img = document.createElement("img");
-            img.src = f.preview;
-            card.appendChild(img);
-        }
-
-        // 下载按钮
-        const downloadBtn = document.createElement("button");
-        downloadBtn.textContent="下载";
-        downloadBtn.onclick = ()=>window.open(f.download,"_blank");
-        card.appendChild(downloadBtn);
-
-        // 复制链接按钮
-        const copyBtn = document.createElement("button");
-        copyBtn.textContent="复制链接";
-        copyBtn.onclick = ()=>navigator.clipboard.writeText(f.download);
-        card.appendChild(copyBtn);
-
-        // 3D 预览按钮
-        if(f.schemat){
-            const schematBtn = document.createElement("button");
-            schematBtn.textContent = "3D 预览";
-            schematBtn.onclick = ()=>window.open(f.schemat, "_blank");
-            card.appendChild(schematBtn);
-        }
-
-        container.appendChild(card);
-    });
+// 弹窗显示图片
+function showModal(src){
+    const modal = document.createElement("div");
+    modal.className = "modal";
+    modal.style.cssText = `
+        position:fixed; top:0; left:0; width:100%; height:100%;
+        background: rgba(0,0,0,0.7); display:flex; align-items:center; justify-content:center;
+    `;
+    const img = document.createElement("img");
+    img.src = src;
+    img.style.maxWidth = "90%";
+    img.style.maxHeight = "90%";
+    modal.appendChild(img);
+    modal.addEventListener("click", ()=> modal.remove());
+    document.body.appendChild(modal);
 }
 
 loadFiles();
