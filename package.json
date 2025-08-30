@@ -1,0 +1,12 @@
+{
+  "name": "openst-archive",
+  "version": "1.0.0",
+  "description": "Minecraft schematic archive with GitHub Pages + Actions + Workers",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/generate_index.js",
+    "start": "node scripts/generate_index.js"
+  },
+  "author": "Linvin",
+  "license": "MIT"
+}
