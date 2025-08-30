@@ -1,21 +1,85 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-  <meta charset="UTF-8">
-  <title>GitHub 网盘</title>
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<title>OpenST 网盘预览</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+  .file-item { border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; background: #fff; display: flex; flex-direction: column; width: 320px; }
+  .filename { font-weight: bold; margin-bottom: 5px; }
+  .preview { width: 300px; height: 200px; border: 1px solid #ccc; background: #eee; display: flex; align-items: center; justify-content: center; }
+  .download { margin-top: 5px; }
+</style>
 </head>
 <body>
+<h2>OpenST 网盘文件列表</h2>
+<div id="file-list"></div>
 
-<header>
-  <div>My GitHub 网盘</div>
-  <input id="search" placeholder="搜索文件...">
-</header>
+<script>
+const FILE_LIST_URL = "https://openst.weizhihan3.workers.dev/list"; // 你的 Worker /list
 
-<div id="tags"></div>
-<div id="file-grid"></div>
-<footer>© 2025 Linvin</footer>
+async function loadFiles() {
+  const res = await fetch(FILE_LIST_URL);
+  const files = await res.json();
 
-<script src="scripts/main.js"></script>
+  const container = document.getElementById("file-list");
+  
+  files.forEach(file => {
+    const item = document.createElement("div");
+    item.className = "file-item";
+
+    const nameEl = document.createElement("div");
+    nameEl.className = "filename";
+    nameEl.textContent = file.name;
+    item.appendChild(nameEl);
+
+    const previewEl = document.createElement("div");
+    previewEl.className = "preview";
+    if(file.schematio) {
+      previewEl.dataset.schematio = file.schematio; // 延迟加载
+      previewEl.textContent = "滚动到此加载预览";
+    } else {
+      const img = document.createElement("img");
+      img.src = file.preview;
+      img.width = 300;
+      img.height = 200;
+      previewEl.appendChild(img);
+    }
+    item.appendChild(previewEl);
+
+    const dlEl = document.createElement("a");
+    dlEl.className = "download";
+    dlEl.href = `/dl/${file.path}`;
+    dlEl.textContent = "下载";
+    dlEl.target = "_blank";
+    item.appendChild(dlEl);
+
+    container.appendChild(item);
+  });
+
+  // 延迟加载 schemat.io iframe
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) {
+        const preview = entry.target;
+        if(preview.dataset.schematio) {
+          const iframe = document.createElement("iframe");
+          iframe.src = preview.dataset.schematio;
+          iframe.width = "300";
+          iframe.height = "200";
+          iframe.style.border = "none";
+          preview.textContent = "";
+          preview.appendChild(iframe);
+        }
+        observer.unobserve(preview);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll(".preview").forEach(preview => observer.observe(preview));
+}
+
+loadFiles();
+</script>
 </body>
 </html>
