@@ -7,6 +7,13 @@
     "schematio": null
   },
   {
+    "name": "test!.litematic",
+    "path": "litematic/test!.litematic",
+    "url": "files/litematic/test!.litematic",
+    "preview": "files/notFound.png",
+    "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/test!.litematic"
+  },
+  {
     "name": "test.litematic",
     "path": "litematic/test.litematic",
     "url": "files/litematic/test.litematic",
