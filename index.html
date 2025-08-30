@@ -28,28 +28,35 @@ async function loadFiles() {
     const item = document.createElement("div");
     item.className = "file-item";
 
+    // 文件名
     const nameEl = document.createElement("div");
     nameEl.className = "filename";
     nameEl.textContent = file.name;
     item.appendChild(nameEl);
 
+    // 预览
     const previewEl = document.createElement("div");
     previewEl.className = "preview";
     if(file.schematio) {
-      previewEl.dataset.schematio = file.schematio; // 延迟加载
+      // 延迟加载 schemat.io iframe
+      previewEl.dataset.schematio = file.schematio;
       previewEl.textContent = "滚动到此加载预览";
     } else {
       const img = document.createElement("img");
-      img.src = file.preview;
+      // 如果 preview 是相对路径，用 GitHub raw 地址
+      img.src = file.preview.startsWith("files/")
+        ? `https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/${file.preview}`
+        : file.preview;
       img.width = 300;
       img.height = 200;
       previewEl.appendChild(img);
     }
     item.appendChild(previewEl);
 
+    // 下载链接，直接指向 Worker
     const dlEl = document.createElement("a");
     dlEl.className = "download";
-    dlEl.href = `/dl/${file.path}`;
+    dlEl.href = `https://openst.weizhihan3.workers.dev/dl/${file.path}`;
     dlEl.textContent = "下载";
     dlEl.target = "_blank";
     item.appendChild(dlEl);
@@ -57,7 +64,7 @@ async function loadFiles() {
     container.appendChild(item);
   });
 
-  // 延迟加载 schemat.io iframe
+  // IntersectionObserver 延迟加载 schemat.io
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if(entry.isIntersecting) {
@@ -83,5 +90,6 @@ loadFiles();
 </script>
 </body>
 </html>
+
 
 
