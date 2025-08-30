@@ -3,7 +3,7 @@
 OpenST 的非官方投影仓库。尝试以一个网页的形式做成网盘
 ============================================================
 Q%A
-1. 对比 [原仓库](https://github.com/MC-OpenST/Storage-schematic-archive-2.0) 的改进在哪里？
+1. 对比 [原仓库](https://github.com/MC-OpenST/Storage-schematic-archive) 的改进在哪里？
 - 在架构上采用了GitHub action来负责管理所有的投影文件，并生成index.json存储。在前端则是通过cf workers fetch下来json内容。不使用github api。
 2. 之前的仓库不好用吗？
 - 架构太烂，api访问限制。低下的可扩展性。这都是我重构这个仓库的原因
