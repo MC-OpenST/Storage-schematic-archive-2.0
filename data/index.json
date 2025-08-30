@@ -1,12 +1,5 @@
 [
   {
-    "name": "keep.txt",
-    "path": "images/keep.txt",
-    "url": "files/images/keep.txt",
-    "preview": "files/notFound.png",
-    "schematio": null
-  },
-  {
     "name": "test!.png",
     "path": "images/test!.png",
     "url": "files/images/test!.png",
