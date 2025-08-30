@@ -1,0 +1,23 @@
+[
+  {
+    "name": "keep.txt",
+    "path": "images/keep.txt",
+    "url": "files/images/keep.txt",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
+    "name": "test.litematic",
+    "path": "litematic/test.litematic",
+    "url": "files/litematic/test.litematic",
+    "preview": "files/notFound.png",
+    "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/test.litematic"
+  },
+  {
+    "name": "notFound.png",
+    "path": "notFound.png",
+    "url": "files/notFound.png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  }
+]
