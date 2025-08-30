@@ -1,95 +1,30 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-<meta charset="UTF-8">
-<title>OpenST 网盘预览</title>
-<style>
-  body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
-  .file-item { border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; background: #fff; display: flex; flex-direction: column; width: 320px; }
-  .filename { font-weight: bold; margin-bottom: 5px; }
-  .preview { width: 300px; height: 200px; border: 1px solid #ccc; background: #eee; display: flex; align-items: center; justify-content: center; }
-  .download { margin-top: 5px; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenST投影仓库</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.png">
 </head>
 <body>
-<h2>OpenST 网盘文件列表</h2>
+<div class="header-bg"></div>
+<img src="favicon.png" alt="OpenST" class="logo">
+<h1 class="title">OpenST投影仓库</h1>
+<header class="header">
+    <a href="https://github.com/MC-OpenST/storage-schematic-archive-2.0" target="_blank" id="github-c">本站Github</a>
+    <a href="https://qun.qq.com/universal-share/share?ac=1&authKey=f3%2BtcY1W8cwr5FnVHqYRjcmpCnMHmzhWl20X3Rfz7JmEyRA2q%2FsyBNGJAvULW1W5&busi_data=eyJncm91cENvZGUiOiI0NDAxMzg5MTYiLCJ0b2tlbiI6IkxCN2pKcGRvb3FjWFpiUDgrVEQya0dVVU9PUHFwVFBMcER4anJNM2dnRTNSNVQwaTUxY0UxTllob25raHpGY20iLCJ1aW4iOiIzODI5MTU2NzE2In0%3D&data=hHLh0imxWvsAqo6bxLAOLaWG5G6St164fHq81TATtYRw3wLxNkQKxlm81M7c8gG3FfjjJZaC6CThT0EPDtJjEw&svctype=4&tempid=h5_group_info" id="qq-c">QQ群</a>
+    <a href="https://discord.gg/6MSCN6JanU" target="_blank" id="discord-c">Discord 分馆</a>
+</header>
+
+<div id="controls">
+  <input type="text" id="search-input" placeholder="搜索文件...">
+  <div id="tag-list"></div>
+</div>
+
 <div id="file-list"></div>
+<div style="height: 200px;"></div>
 
-<script>
-const FILE_LIST_URL = "https://openst.weizhihan3.workers.dev/list";
-
-async function loadFiles() {
-  const res = await fetch(FILE_LIST_URL);
-  const files = await res.json();
-
-  const container = document.getElementById("file-list");
-  
-  files.forEach(file => {
-    const item = document.createElement("div");
-    item.className = "file-item";
-
-    // 文件名
-    const nameEl = document.createElement("div");
-    nameEl.className = "filename";
-    nameEl.textContent = file.name;
-    item.appendChild(nameEl);
-
-    // 预览
-    const previewEl = document.createElement("div");
-    previewEl.className = "preview";
-    if(file.schematio) {
-      // 延迟加载 schemat.io iframe
-      previewEl.dataset.schematio = file.schematio;
-      previewEl.textContent = "滚动到此加载预览";
-    } else {
-      const img = document.createElement("img");
-      // 如果 preview 是相对路径，用 GitHub raw 地址
-      img.src = file.preview.startsWith("files/")
-        ? `https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/${file.preview}`
-        : file.preview;
-      img.width = 300;
-      img.height = 200;
-      previewEl.appendChild(img);
-    }
-    item.appendChild(previewEl);
-
-    // 下载链接，直接指向 Worker
-    const dlEl = document.createElement("a");
-    dlEl.className = "download";
-    dlEl.href = `https://openst.weizhihan3.workers.dev/dl/${file.path}`;
-    dlEl.textContent = "下载";
-    dlEl.target = "_blank";
-    item.appendChild(dlEl);
-
-    container.appendChild(item);
-  });
-
-  // IntersectionObserver 延迟加载 schemat.io
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting) {
-        const preview = entry.target;
-        if(preview.dataset.schematio) {
-          const iframe = document.createElement("iframe");
-          iframe.src = preview.dataset.schematio;
-          iframe.width = "300";
-          iframe.height = "200";
-          iframe.style.border = "none";
-          preview.textContent = "";
-          preview.appendChild(iframe);
-        }
-        observer.unobserve(preview);
-      }
-    });
-  }, { threshold: 0.1 });
-
-  document.querySelectorAll(".preview").forEach(preview => observer.observe(preview));
-}
-
-loadFiles();
-</script>
+<script src="scripts/main.js" type="module"></script>
 </body>
 </html>
-
-
-
