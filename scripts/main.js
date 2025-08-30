@@ -44,13 +44,12 @@ async function loadFiles() {
             item.appendChild(nameEl);
 
             const img = document.createElement("img");
-            const previewPath = file.preview.replace(/^files\//, ''); // 去掉前缀
             const pathParts = file.preview.split('/');
             const encodedPath = pathParts.map(encodeURIComponent).join('/');
             img.src = `${WORKER_BASE}/${encodedPath}`;
             img.width = 300;
             img.height = 200;
-            img.addEventListener("click", () => showModal(`${WORKER_BASE}/files/${encodeURIComponent(previewPath)}`));
+            img.addEventListener("click", () => showModal(img.src));
             item.appendChild(img);
 
             const btnContainer = document.createElement("div");
@@ -101,7 +100,7 @@ function showModal(src){
         background: rgba(0,0,0,0.7); display:flex; align-items:center; justify-content:center;
     `;
     const img = document.createElement("img");
-    img.src = src;
+    img.src = src; // ⚡ 这里不要再 encode
     img.style.maxWidth = "90%";
     img.style.maxHeight = "90%";
     modal.appendChild(img);
