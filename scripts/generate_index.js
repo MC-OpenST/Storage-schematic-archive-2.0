@@ -1,5 +1,5 @@
-import fs from 'fs';
-import path from 'path';
+const fs = require("fs");
+const path = require("path");
 
 const filesDir = path.join(process.cwd(), '../files');
 const indexFile = path.join(process.cwd(), '../data/index.json');
@@ -79,4 +79,5 @@ const index = allFiles.map(f => {
 fs.mkdirSync(path.dirname(indexFile), { recursive: true });
 fs.writeFileSync(indexFile, JSON.stringify(index, null, 2));
 console.log('index.json generated with default preview and schemat.io!');
+
 
