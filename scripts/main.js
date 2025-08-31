@@ -1,4 +1,4 @@
-const FILE_LIST_URL = "https://openst.weizhihan3.workers.dev/list?ts=169347265456";
+const FILE_LIST_URL = "https://openst.weizhihan3.workers.dev/list";
 const TAGS = ['大宗','盒仓','MIS','MBS','细雪展示']; // 前端硬编码标签
 const WORKER_BASE = "https://openst.weizhihan3.workers.dev";
 
@@ -109,3 +109,4 @@ function showModal(src){
 }
 
 loadFiles();
+
