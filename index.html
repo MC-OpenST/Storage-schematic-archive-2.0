@@ -26,5 +26,37 @@
 <div style="height: 200px;"></div>
 
 <script src="scripts/main.js" type="module"></script>
+<script src="scripts/lazyload.js" type="module"></script>
+<script type="module">
+    import { initLazyLoad } from './scripts/lazyload.js';
+
+    async function loadFiles() {
+        const res = await fetch('https://openst.weizhihan3.workers.dev/list');
+        const files = await res.json();
+
+        const container = document.getElementById('file-list');
+        container.innerHTML = '';
+
+        files.forEach(file => {
+            if(file.name.endsWith('.png')) return;
+
+            const item = document.createElement('div');
+            const img = document.createElement('img');
+
+            img.dataset.src = `https://openst.weizhihan3.workers.dev/${file.preview}`;
+            img.width = 300;
+            img.height = 200;
+
+            item.appendChild(img);
+            container.appendChild(item);
+        });
+
+        // 调用懒加载
+        initLazyLoad({ container });
+    }
+
+    loadFiles();
+</script>
 </body>
 </html>
+
