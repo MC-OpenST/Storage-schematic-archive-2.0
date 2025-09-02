@@ -38,11 +38,12 @@
         container.innerHTML = '';
 
         files.forEach(file => {
-            if(file.name.endsWith('.png')) return;
+            if (file.name.endsWith('.png')) return;
 
             const item = document.createElement('div');
-            const img = document.createElement('img');
+            item.className = 'file-item';
 
+            const img = document.createElement('img');
             img.dataset.src = `https://openst.weizhihan3.workers.dev/${file.preview}`;
             img.width = 300;
             img.height = 200;
@@ -51,12 +52,16 @@
             container.appendChild(item);
         });
 
-        // 调用懒加载
+        // DOM 渲染后再挂懒加载
         initLazyLoad({ container });
     }
 
-    loadFiles();
+    // 等 DOM 就绪后再启动
+    document.addEventListener("DOMContentLoaded", () => {
+        loadFiles();
+    });
 </script>
 </body>
 </html>
+
 
