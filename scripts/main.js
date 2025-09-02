@@ -19,6 +19,7 @@ async function loadFiles() {
     });
     // 添加清除筛选按钮
     const clearBtn = document.createElement("button");
+    clearBtn.id = "clear-btn";
     clearBtn.textContent = "清除筛选";
     clearBtn.addEventListener("click", () => renderFiles(files));
     tagContainer.appendChild(clearBtn);
@@ -109,5 +110,6 @@ function showModal(src){
 }
 
 loadFiles();
+
 
 
