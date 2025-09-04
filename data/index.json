@@ -1,8 +1,85 @@
 [
   {
+    "name": "16gt_MBS_77_v2.0[MBS多种类潜影盒分类].png",
+    "path": "images/16gt_MBS_77_v2.0[MBS多种类潜影盒分类].png",
+    "url": "files/images/16gt_MBS_77_v2.0[MBS多种类潜影盒分类].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
+    "name": "Fully_Locked_Storage_Input_System_1.12[SIS无实体输入].png",
+    "path": "images/Fully_Locked_Storage_Input_System_1.12[SIS无实体输入].png",
+    "url": "files/images/Fully_Locked_Storage_Input_System_1.12[SIS无实体输入].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
+    "name": "Fully_Locked_Storage_Input_System_1.17[SIS无实体输入].png",
+    "path": "images/Fully_Locked_Storage_Input_System_1.17[SIS无实体输入].png",
+    "url": "files/images/Fully_Locked_Storage_Input_System_1.17[SIS无实体输入].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
+    "name": "Fully_Locked_Storage_Input_System_1.18[SIS无实体输入].png",
+    "path": "images/Fully_Locked_Storage_Input_System_1.18[SIS无实体输入].png",
+    "url": "files/images/Fully_Locked_Storage_Input_System_1.18[SIS无实体输入].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
+    "name": "LessNoisyMIS[MIS多物品分类].png",
+    "path": "images/LessNoisyMIS[MIS多物品分类].png",
+    "url": "files/images/LessNoisyMIS[MIS多物品分类].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
+    "name": "Mis_V5.1[MIS多物品分类].png",
+    "path": "images/Mis_V5.1[MIS多物品分类].png",
+    "url": "files/images/Mis_V5.1[MIS多物品分类].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
+    "name": "[12gt]双边沿无延迟强模链[编码相关].png",
+    "path": "images/[12gt]双边沿无延迟强模链[编码相关].png",
+    "url": "files/images/[12gt]双边沿无延迟强模链[编码相关].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
+    "name": "[串行二进制信号转物品盒][编码相关].png",
+    "path": "images/[串行二进制信号转物品盒][编码相关].png",
+    "url": "files/images/[串行二进制信号转物品盒][编码相关].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
+    "name": "[盒子寄存信号发生器] by obi[编码相关].png",
+    "path": "images/[盒子寄存信号发生器] by obi[编码相关].png",
+    "url": "files/images/[盒子寄存信号发生器] by obi[编码相关].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
+    "name": "[盒子解码转串行二进制 4gt 26bit][编码相关].png",
+    "path": "images/[盒子解码转串行二进制 4gt 26bit][编码相关].png",
+    "url": "files/images/[盒子解码转串行二进制 4gt 26bit][编码相关].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
     "name": "test!.png",
     "path": "images/test!.png",
     "url": "files/images/test!.png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
+    "name": "多物品分类MIS4.2漏斗全锁standard_mis4.2_storage_v0.6.2_hopperlocked[MIS多物品分类].png",
+    "path": "images/多物品分类MIS4.2漏斗全锁standard_mis4.2_storage_v0.6.2_hopperlocked[MIS多物品分类].png",
+    "url": "files/images/多物品分类MIS4.2漏斗全锁standard_mis4.2_storage_v0.6.2_hopperlocked[MIS多物品分类].png",
     "preview": "files/notFound.png",
     "schematio": null
   },
@@ -38,7 +115,7 @@
     "name": "16gt_MBS_77_v2.0[MBS多种类潜影盒分类].litematic",
     "path": "litematic/16gt_MBS_77_v2.0[MBS多种类潜影盒分类].litematic",
     "url": "files/litematic/16gt_MBS_77_v2.0[MBS多种类潜影盒分类].litematic",
-    "preview": "files/notFound.png",
+    "preview": "files/images/16gt_MBS_77_v2.0[MBS多种类潜影盒分类].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/16gt_MBS_77_v2.0[MBS多种类潜影盒分类].litematic"
   },
   {
@@ -136,21 +213,21 @@
     "name": "Fully_Locked_Storage_Input_System_1.12[SIS无实体输入].litematic",
     "path": "litematic/Fully_Locked_Storage_Input_System_1.12[SIS无实体输入].litematic",
     "url": "files/litematic/Fully_Locked_Storage_Input_System_1.12[SIS无实体输入].litematic",
-    "preview": "files/notFound.png",
+    "preview": "files/images/Fully_Locked_Storage_Input_System_1.12[SIS无实体输入].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/Fully_Locked_Storage_Input_System_1.12[SIS无实体输入].litematic"
   },
   {
     "name": "Fully_Locked_Storage_Input_System_1.17[SIS无实体输入].litematic",
     "path": "litematic/Fully_Locked_Storage_Input_System_1.17[SIS无实体输入].litematic",
     "url": "files/litematic/Fully_Locked_Storage_Input_System_1.17[SIS无实体输入].litematic",
-    "preview": "files/notFound.png",
+    "preview": "files/images/Fully_Locked_Storage_Input_System_1.17[SIS无实体输入].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/Fully_Locked_Storage_Input_System_1.17[SIS无实体输入].litematic"
   },
   {
     "name": "Fully_Locked_Storage_Input_System_1.18[SIS无实体输入].litematic",
     "path": "litematic/Fully_Locked_Storage_Input_System_1.18[SIS无实体输入].litematic",
     "url": "files/litematic/Fully_Locked_Storage_Input_System_1.18[SIS无实体输入].litematic",
-    "preview": "files/notFound.png",
+    "preview": "files/images/Fully_Locked_Storage_Input_System_1.18[SIS无实体输入].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/Fully_Locked_Storage_Input_System_1.18[SIS无实体输入].litematic"
   },
   {
@@ -171,14 +248,14 @@
     "name": "LessNoisyMIS[MIS多物品分类].litematic",
     "path": "litematic/LessNoisyMIS[MIS多物品分类].litematic",
     "url": "files/litematic/LessNoisyMIS[MIS多物品分类].litematic",
-    "preview": "files/notFound.png",
+    "preview": "files/images/LessNoisyMIS[MIS多物品分类].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/LessNoisyMIS[MIS多物品分类].litematic"
   },
   {
     "name": "Mis_V5.1[MIS多物品分类].litematic",
     "path": "litematic/Mis_V5.1[MIS多物品分类].litematic",
     "url": "files/litematic/Mis_V5.1[MIS多物品分类].litematic",
-    "preview": "files/notFound.png",
+    "preview": "files/images/Mis_V5.1[MIS多物品分类].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/Mis_V5.1[MIS多物品分类].litematic"
   },
   {
@@ -220,28 +297,28 @@
     "name": "[12gt]双边沿无延迟强模链[编码相关].litematic",
     "path": "litematic/[12gt]双边沿无延迟强模链[编码相关].litematic",
     "url": "files/litematic/[12gt]双边沿无延迟强模链[编码相关].litematic",
-    "preview": "files/notFound.png",
+    "preview": "files/images/[12gt]双边沿无延迟强模链[编码相关].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/[12gt]双边沿无延迟强模链[编码相关].litematic"
   },
   {
     "name": "[串行二进制信号转物品盒][编码相关].litematic",
     "path": "litematic/[串行二进制信号转物品盒][编码相关].litematic",
     "url": "files/litematic/[串行二进制信号转物品盒][编码相关].litematic",
-    "preview": "files/notFound.png",
+    "preview": "files/images/[串行二进制信号转物品盒][编码相关].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/[串行二进制信号转物品盒][编码相关].litematic"
   },
   {
     "name": "[盒子寄存信号发生器] by obi[编码相关].litematic",
     "path": "litematic/[盒子寄存信号发生器] by obi[编码相关].litematic",
     "url": "files/litematic/[盒子寄存信号发生器] by obi[编码相关].litematic",
-    "preview": "files/notFound.png",
+    "preview": "files/images/[盒子寄存信号发生器] by obi[编码相关].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/[盒子寄存信号发生器] by obi[编码相关].litematic"
   },
   {
     "name": "[盒子解码转串行二进制 4gt 26bit][编码相关].litematic",
     "path": "litematic/[盒子解码转串行二进制 4gt 26bit][编码相关].litematic",
     "url": "files/litematic/[盒子解码转串行二进制 4gt 26bit][编码相关].litematic",
-    "preview": "files/notFound.png",
+    "preview": "files/images/[盒子解码转串行二进制 4gt 26bit][编码相关].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/[盒子解码转串行二进制 4gt 26bit][编码相关].litematic"
   },
   {
@@ -360,7 +437,7 @@
     "name": "多物品分类MIS4.2漏斗全锁standard_mis4.2_storage_v0.6.2_hopperlocked[MIS多物品分类].litematic",
     "path": "litematic/多物品分类MIS4.2漏斗全锁standard_mis4.2_storage_v0.6.2_hopperlocked[MIS多物品分类].litematic",
     "url": "files/litematic/多物品分类MIS4.2漏斗全锁standard_mis4.2_storage_v0.6.2_hopperlocked[MIS多物品分类].litematic",
-    "preview": "files/notFound.png",
+    "preview": "files/images/多物品分类MIS4.2漏斗全锁standard_mis4.2_storage_v0.6.2_hopperlocked[MIS多物品分类].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/多物品分类MIS4.2漏斗全锁standard_mis4.2_storage_v0.6.2_hopperlocked[MIS多物品分类].litematic"
   },
   {
