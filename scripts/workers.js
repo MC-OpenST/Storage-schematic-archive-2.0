@@ -1,5 +1,7 @@
 // 作者的独白
 /* 由于之前我没注意转码所带来的文本解释问题，导致了下载时的转码变成了文本，在测试的时候我才注意到qwq。最后紧急修改至二进制源文件下载。不然原本的2.4kb文件变成14b文件那谁能理解，就剩个标题了pwp */ 
+/* 2025.09.05
+md 图片我又双重编码了 */
 
 addEventListener("fetch", event => {
   event.respondWith(handleRequest(event));
@@ -70,18 +72,16 @@ async function handleRequest(event) {
   // /files/<file> 直接代理 GitHub raw 文件
   if (pathname.startsWith("/files/")) {
     const filePath = pathname.replace("/files/", "");
-    const fileUrl = `${FILES_RAW_URL}/${encodePathPreserveSlash(filePath)}`;
+    const fileUrl = `${FILES_RAW_URL}/${filePath}`; // 不要 encode
     const fileRes = await fetch(fileUrl);
-
+  
     if (!fileRes.ok) {
       return new Response("File not found", { status: 404 });
     }
-
-    const arrayBuffer = await fileRes.arrayBuffer();
-    return new Response(arrayBuffer, {
+  
+    return new Response(fileRes.body, {
       headers: {
-        "Content-Type":
-          fileRes.headers.get("content-type") || "application/octet-stream",
+        "Content-Type": fileRes.headers.get("content-type") || "application/octet-stream",
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET, OPTIONS",
       },
@@ -93,3 +93,4 @@ async function handleRequest(event) {
     headers: { "Access-Control-Allow-Origin": "*" },
   });
 }
+
