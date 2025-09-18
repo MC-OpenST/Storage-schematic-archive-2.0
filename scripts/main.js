@@ -1,5 +1,5 @@
 const FILE_LIST_URL = "data/index.json";
-const TAGS = ['大宗','盒仓','MIS','MBS','细雪展示']; // 前端硬编码标签
+const TAGS = ['大宗','空盒仓库','MIS多物品分类','MBS多种类潜影盒分类','细雪展示','SIS无实体输入','编码相关','远程大宗','不可堆叠分类','打包机','混杂打包','自适应打包机','地狱门加载器','分盒器','盒子分类','盒子合并','红石合成站','解码器','潜影盒展示','四边形大宗','整流器']; // 前端硬编码标签 // 前端硬编码标签
 
 async function loadFiles() {
     const filesRes = await fetch(FILE_LIST_URL);
@@ -140,3 +140,4 @@ function showModal(src){
 }
 
 loadFiles();
+
