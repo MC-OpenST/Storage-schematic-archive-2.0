@@ -100,23 +100,6 @@ h1 {
     text-align: center;
 }
 
-
-#clear-btn {
-    display: inline-block !important;
-    margin: 4px !important;
-    padding: 6px 14px !important;
-    border-radius: 4px !important;
-    border: none !important;
-    background-color: #024C3D !important;
-    color: #fff !important;
-    cursor: pointer !important;
-    font-size: 14px !important;
-}
-
-#clear-btn:hover {
-    background-color: darkslategray !important;
-}
-
 #search-input {
     display: block;
     margin: 0 auto 12px auto;
@@ -149,6 +132,71 @@ h1 {
 
 #tag-list button:hover {
     background-color: #6F8FAF;
+}
+
+#clear-btn {
+    display: inline-block !important;
+    margin: 4px !important;
+    padding: 6px 14px !important;
+    border-radius: 4px !important;
+    border: none !important;
+    background-color: #024C3D !important;
+    color: #fff !important;
+    cursor: pointer !important;
+    font-size: 14px !important;
+}
+
+#clear-btn:hover {
+    background-color: darkslategray !important;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 22px;
+    margin-right: 8px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(18px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }
 
 #file-list {
@@ -233,5 +281,3 @@ h1 {
     max-height: 90%;
     border-radius: 6px;
 }
-
-
