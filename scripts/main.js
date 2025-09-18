@@ -1,6 +1,5 @@
-const FILE_LIST_URL = "https://openst.weizhihan3.workers.dev/list";
-const TAGS = ['大宗','空盒仓库','MIS多物品分类','MBS多种类潜影盒分类','细雪展示','SIS无实体输入','编码相关','远程大宗','不可堆叠分类','打包机','混杂打包','自适应打包机','地狱门加载器','分盒器','盒子分类','盒子合并','红石合成站','解码器','潜影盒展示','四边形大宗','整流器']; // 前端硬编码标签
-const WORKER_BASE = "https://openst.weizhihan3.workers.dev";
+const FILE_LIST_URL = "data/index.json";
+const TAGS = ['大宗','盒仓','MIS','MBS','细雪展示']; // 前端硬编码标签
 
 async function loadFiles() {
     const filesRes = await fetch(FILE_LIST_URL);
@@ -44,10 +43,11 @@ async function loadFiles() {
             nameEl.textContent = file.name;
             item.appendChild(nameEl);
 
+            // 走本地 files 路径
+            const imgUrl = file.preview;
+
             const img = document.createElement("img");
-            const pathParts = file.preview.split('/');
-            const encodedPath = pathParts.map(encodeURIComponent).join('/');
-            img.src = `${WORKER_BASE}/${encodedPath}`;
+            img.src = imgUrl;
             img.width = 300;
             img.height = 200;
             img.addEventListener("click", () => showModal(img.src));
@@ -58,14 +58,13 @@ async function loadFiles() {
             // 下载按钮
             const downloadBtn = document.createElement("button");
             downloadBtn.textContent = "下载";
-            // 根据 path 动态生成下载 URL
-            downloadBtn.onclick = () => window.open(`https://openst.weizhihan3.workers.dev/dl/${file.path}`, "_blank");
+            downloadBtn.onclick = () => window.open(getDownloadUrl(file), "_blank");
             btnContainer.appendChild(downloadBtn);
 
             // 复制链接按钮
             const copyBtn = document.createElement("button");
             copyBtn.textContent = "复制链接";
-            copyBtn.onclick = () => navigator.clipboard.writeText(`https://openst.weizhihan3.workers.dev/dl/${file.path}`);
+            copyBtn.onclick = () => navigator.clipboard.writeText(getDownloadUrl(file));
             btnContainer.appendChild(copyBtn);
 
             if(file.schematio){
@@ -78,6 +77,37 @@ async function loadFiles() {
 
             item.appendChild(btnContainer);
             container.appendChild(item);
+
+            // ghfast切换按钮
+            // 滑块部分
+            const switchLabel = document.createElement("label");
+            const ghfastToggle = document.createElement("input");
+            const sliderSpan = document.createElement("span");
+            switchLabel.className = "switch";
+            ghfastToggle.type = "checkbox";
+            ghfastToggle.id = `ghfast-${file.name}`;
+            sliderSpan.className = "slider round";
+
+            switchLabel.appendChild(ghfastToggle);
+            switchLabel.appendChild(sliderSpan);
+
+            // 文本 label
+            const ghfastText = document.createElement("span");
+            let useGhfast = false;
+            ghfastToggle.checked = false;
+            ghfastText.textContent = ghfastToggle.checked ? "启用GitHub Proxy加速" : "使用GitHub raw原链接";
+
+            ghfastToggle.addEventListener("change", () => {
+                useGhfast = ghfastToggle.checked;
+                ghfastText.textContent = useGhfast ? "启用GitHub Proxy加速" : "使用GitHub raw原链接";
+            });
+
+            btnContainer.appendChild(switchLabel);
+            btnContainer.appendChild(ghfastText);
+            // 获取下载链接
+            function getDownloadUrl(file) {
+                return useGhfast ? `https://ghfast.top/${file.rawUrl}` : file.rawUrl;
+            }
         });
     }
 
@@ -101,7 +131,7 @@ function showModal(src){
         background: rgba(0,0,0,0.7); display:flex; align-items:center; justify-content:center;
     `;
     const img = document.createElement("img");
-    img.src = src; // ⚡ 这里不要再 encode
+    img.src = src; // 这里不要 encode
     img.style.maxWidth = "90%";
     img.style.maxHeight = "90%";
     modal.appendChild(img);
@@ -110,6 +140,3 @@ function showModal(src){
 }
 
 loadFiles();
-
-
-
