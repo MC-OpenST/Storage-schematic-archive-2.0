@@ -68,10 +68,14 @@ const indexData = allFiles.map(f => {
         schematio = schematioUrl(f);
     }
 
+    const repo = "Storage-schematic-archive-2.0";
+    const user = "MC-OpenST";
+    const rawUrl = `https://raw.githubusercontent.com/${user}/${repo}/main/files/${f}`;
+
     return {
         name: path.basename(f),
         path: f,
-        url: `files/${f}`,
+        rawUrl, // GitHub 原始地址
         preview,
         schematio
     };
