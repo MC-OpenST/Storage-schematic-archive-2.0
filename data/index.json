@@ -266,6 +266,13 @@
     "schematio": null
   },
   {
+    "name": "PI002_Ultimate_Storage_Input_v5[SIS无实体输入].litematic",
+    "path": "litematic/PI002_Ultimate_Storage_Input_v5[SIS无实体输入].litematic",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/PI002_Ultimate_Storage_Input_v5[SIS无实体输入].litematic",
+    "preview": "files/notFound.png",
+    "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/PI002_Ultimate_Storage_Input_v5[SIS无实体输入].litematic"
+  },
+  {
     "name": "PyraLeft_1.20_Unstackable_Sorter[不可堆叠分类].litematic",
     "path": "litematic/PyraLeft_1.20_Unstackable_Sorter[不可堆叠分类].litematic",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/PyraLeft_1.20_Unstackable_Sorter[不可堆叠分类].litematic",
