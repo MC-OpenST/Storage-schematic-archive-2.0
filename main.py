@@ -6,8 +6,8 @@ from tkinter import filedialog, messagebox
 from urllib.parse import urlparse
 
 # -------------------- 配置目录 --------------------
-LITEMATIC_DIR = "main/files/litematic"
-IMAGE_DIR = "main/files/images"
+LITEMATIC_DIR = "files/litematic"
+IMAGE_DIR = "files/images"
 
 # -------------------- GUI --------------------
 root = tk.Tk()
