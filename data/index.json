@@ -42,6 +42,13 @@
     "schematio": null
   },
   {
+    "name": "PI002_Ultimate_Storage_Input_v5[SIS无实体输入].png",
+    "path": "images/PI002_Ultimate_Storage_Input_v5[SIS无实体输入].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/PI002_Ultimate_Storage_Input_v5[SIS无实体输入].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
     "name": "[12gt]双边沿无延迟强模链[编码相关].png",
     "path": "images/[12gt]双边沿无延迟强模链[编码相关].png",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/[12gt]双边沿无延迟强模链[编码相关].png",
@@ -269,7 +276,7 @@
     "name": "PI002_Ultimate_Storage_Input_v5[SIS无实体输入].litematic",
     "path": "litematic/PI002_Ultimate_Storage_Input_v5[SIS无实体输入].litematic",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/PI002_Ultimate_Storage_Input_v5[SIS无实体输入].litematic",
-    "preview": "files/notFound.png",
+    "preview": "files/images/PI002_Ultimate_Storage_Input_v5[SIS无实体输入].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/PI002_Ultimate_Storage_Input_v5[SIS无实体输入].litematic"
   },
   {
