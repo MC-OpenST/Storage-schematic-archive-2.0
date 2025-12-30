@@ -56,6 +56,13 @@
     "schematio": null
   },
   {
+    "name": "YAMS V2.3 MB 1.20[仓库成品].png",
+    "path": "images/YAMS V2.3 MB 1.20[仓库成品].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/YAMS V2.3 MB 1.20[仓库成品].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
     "name": "[12gt]双边沿无延迟强模链[编码相关].png",
     "path": "images/[12gt]双边沿无延迟强模链[编码相关].png",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/[12gt]双边沿无延迟强模链[编码相关].png",
@@ -320,6 +327,13 @@
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/Variable Filter V2.1b-r4[打包机][自适应打包机].zip",
     "preview": "files/notFound.png",
     "schematio": null
+  },
+  {
+    "name": "YAMS V2.3 MB 1.20[仓库成品].litematic",
+    "path": "litematic/YAMS V2.3 MB 1.20[仓库成品].litematic",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/YAMS V2.3 MB 1.20[仓库成品].litematic",
+    "preview": "files/images/YAMS V2.3 MB 1.20[仓库成品].png",
+    "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/YAMS V2.3 MB 1.20[仓库成品].litematic"
   },
   {
     "name": "[12gt]双边沿无延迟强模链[编码相关].litematic",
