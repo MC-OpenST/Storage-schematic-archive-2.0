@@ -7,6 +7,13 @@
     "schematio": null
   },
   {
+    "name": "20bps 水平物品实体传输 by：Nvertd[物品传输].png",
+    "path": "images/20bps 水平物品实体传输 by：Nvertd[物品传输].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/20bps 水平物品实体传输 by：Nvertd[物品传输].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
     "name": "Fully_Locked_Storage_Input_System_1.12[SIS无实体输入].png",
     "path": "images/Fully_Locked_Storage_Input_System_1.12[SIS无实体输入].png",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/Fully_Locked_Storage_Input_System_1.12[SIS无实体输入].png",
@@ -173,6 +180,13 @@
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/16gt_MBS_77_v2.0[MBS多种类潜影盒分类].litematic",
     "preview": "files/images/16gt_MBS_77_v2.0[MBS多种类潜影盒分类].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/16gt_MBS_77_v2.0[MBS多种类潜影盒分类].litematic"
+  },
+  {
+    "name": "20bps 水平物品实体传输 by：Nvertd[物品传输].litematic",
+    "path": "litematic/20bps 水平物品实体传输 by：Nvertd[物品传输].litematic",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/20bps 水平物品实体传输 by：Nvertd[物品传输].litematic",
+    "preview": "files/images/20bps 水平物品实体传输 by：Nvertd[物品传输].png",
+    "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/20bps 水平物品实体传输 by：Nvertd[物品传输].litematic"
   },
   {
     "name": "29_8K红石原件自动合成系统V2[红石合成站].zip",
