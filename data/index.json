@@ -119,6 +119,13 @@
     "schematio": null
   },
   {
+    "name": "walldisplay_defaultextended[细雪展示 潜影盒展示].png",
+    "path": "images/walldisplay_defaultextended[细雪展示 潜影盒展示].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/walldisplay_defaultextended[细雪展示 潜影盒展示].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
     "name": "多物品分类MIS4.2漏斗全锁standard_mis4.2_storage_v0.6.2_hopperlocked[MIS多物品分类].png",
     "path": "images/多物品分类MIS4.2漏斗全锁standard_mis4.2_storage_v0.6.2_hopperlocked[MIS多物品分类].png",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/多物品分类MIS4.2漏斗全锁standard_mis4.2_storage_v0.6.2_hopperlocked[MIS多物品分类].png",
@@ -439,6 +446,13 @@
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/test.litematic",
     "preview": "files/notFound.png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/test.litematic"
+  },
+  {
+    "name": "walldisplay_defaultextended[细雪展示 潜影盒展示].litematic",
+    "path": "litematic/walldisplay_defaultextended[细雪展示 潜影盒展示].litematic",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/walldisplay_defaultextended[细雪展示 潜影盒展示].litematic",
+    "preview": "files/images/walldisplay_defaultextended[细雪展示 潜影盒展示].png",
+    "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/walldisplay_defaultextended[细雪展示 潜影盒展示].litematic"
   },
   {
     "name": "【无实体地狱门加载器 主世界】[地狱门加载器].litematic",
