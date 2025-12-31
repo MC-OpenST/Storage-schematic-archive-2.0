@@ -56,6 +56,13 @@
     "schematio": null
   },
   {
+    "name": "PyraLeft_TIS_3w%5B%E5%85%A8%E7%89%A9%E5%93%81%E5%8D%95%E7%89%87%5D.png",
+    "path": "images/PyraLeft_TIS_3w%5B%E5%85%A8%E7%89%A9%E5%93%81%E5%8D%95%E7%89%87%5D.png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/PyraLeft_TIS_3w%5B%E5%85%A8%E7%89%A9%E5%93%81%E5%8D%95%E7%89%87%5D.png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
     "name": "YAMS V2.3 MB 1.20[仓库成品].png",
     "path": "images/YAMS V2.3 MB 1.20[仓库成品].png",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/YAMS V2.3 MB 1.20[仓库成品].png",
@@ -320,6 +327,13 @@
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/PyraLeft_1.20_Unstackable_Sorter_FHL(1)[不可堆叠分类].litematic",
     "preview": "files/notFound.png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/PyraLeft_1.20_Unstackable_Sorter_FHL(1)[不可堆叠分类].litematic"
+  },
+  {
+    "name": "PyraLeft_TIS_3w%5B%E5%85%A8%E7%89%A9%E5%93%81%E5%8D%95%E7%89%87%5D.litematic",
+    "path": "litematic/PyraLeft_TIS_3w%5B%E5%85%A8%E7%89%A9%E5%93%81%E5%8D%95%E7%89%87%5D.litematic",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/PyraLeft_TIS_3w%5B%E5%85%A8%E7%89%A9%E5%93%81%E5%8D%95%E7%89%87%5D.litematic",
+    "preview": "files/images/PyraLeft_TIS_3w%5B%E5%85%A8%E7%89%A9%E5%93%81%E5%8D%95%E7%89%87%5D.png",
+    "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/PyraLeft_TIS_3w%5B%E5%85%A8%E7%89%A9%E5%93%81%E5%8D%95%E7%89%87%5D.litematic"
   },
   {
     "name": "SBCL_NE-Kahyxen[地狱门加载器].litematic",
