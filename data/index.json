@@ -21,6 +21,13 @@
     "schematio": null
   },
   {
+    "name": "1.20+全锁不可堆叠打包套装v2.0 by 77 & Breeze[不可堆叠分类].png",
+    "path": "images/1.20+全锁不可堆叠打包套装v2.0 by 77 & Breeze[不可堆叠分类].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/1.20+全锁不可堆叠打包套装v2.0 by 77 & Breeze[不可堆叠分类].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
     "name": "16gt_MBS_77_v2.0[MBS多种类潜影盒分类].png",
     "path": "images/16gt_MBS_77_v2.0[MBS多种类潜影盒分类].png",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/16gt_MBS_77_v2.0[MBS多种类潜影盒分类].png",
@@ -213,7 +220,7 @@
     "name": "1.20+全锁不可堆叠打包套装v2.0 by 77 & Breeze[不可堆叠分类].litematic",
     "path": "litematic/1.20+全锁不可堆叠打包套装v2.0 by 77 & Breeze[不可堆叠分类].litematic",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/1.20+全锁不可堆叠打包套装v2.0 by 77 & Breeze[不可堆叠分类].litematic",
-    "preview": "files/notFound.png",
+    "preview": "files/images/1.20+全锁不可堆叠打包套装v2.0 by 77 & Breeze[不可堆叠分类].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/1.20+全锁不可堆叠打包套装v2.0 by 77 & Breeze[不可堆叠分类].litematic"
   },
   {
