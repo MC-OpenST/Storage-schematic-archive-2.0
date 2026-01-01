@@ -252,6 +252,13 @@
     "schematio": null
   },
   {
+    "name": "remote_bulk_final[编码相关][远程大宗].png",
+    "path": "images/remote_bulk_final[编码相关][远程大宗].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/remote_bulk_final[编码相关][远程大宗].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
     "name": "test!.png",
     "path": "images/test!.png",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/test!.png",
@@ -584,7 +591,7 @@
     "name": "remote_bulk_final[编码相关][远程大宗].litematic",
     "path": "litematic/remote_bulk_final[编码相关][远程大宗].litematic",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/remote_bulk_final[编码相关][远程大宗].litematic",
-    "preview": "files/notFound.png",
+    "preview": "files/images/remote_bulk_final[编码相关][远程大宗].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/remote_bulk_final[编码相关][远程大宗].litematic"
   },
   {
