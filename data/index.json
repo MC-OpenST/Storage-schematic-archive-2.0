@@ -266,6 +266,13 @@
     "schematio": null
   },
   {
+    "name": "stolen_smol_transcoder[编码相关].png",
+    "path": "images/stolen_smol_transcoder[编码相关].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/stolen_smol_transcoder[编码相关].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
     "name": "test!.png",
     "path": "images/test!.png",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/test!.png",
@@ -605,7 +612,7 @@
     "name": "stolen_smol_transcoder[编码相关].litematic",
     "path": "litematic/stolen_smol_transcoder[编码相关].litematic",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/stolen_smol_transcoder[编码相关].litematic",
-    "preview": "files/notFound.png",
+    "preview": "files/images/stolen_smol_transcoder[编码相关].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/stolen_smol_transcoder[编码相关].litematic"
   },
   {
