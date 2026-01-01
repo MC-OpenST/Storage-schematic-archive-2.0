@@ -231,6 +231,13 @@
     "schematio": null
   },
   {
+    "name": "non-encoded-quad[四边形大宗].png",
+    "path": "images/non-encoded-quad[四边形大宗].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/non-encoded-quad[四边形大宗].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
     "name": "test!.png",
     "path": "images/test!.png",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/test!.png",
@@ -556,7 +563,7 @@
     "name": "non-encoded-quad[四边形大宗].litematic",
     "path": "litematic/non-encoded-quad[四边形大宗].litematic",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/non-encoded-quad[四边形大宗].litematic",
-    "preview": "files/notFound.png",
+    "preview": "files/images/non-encoded-quad[四边形大宗].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/non-encoded-quad[四边形大宗].litematic"
   },
   {
