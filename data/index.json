@@ -336,6 +336,13 @@
     "schematio": null
   },
   {
+    "name": "单片地狱门加载器1.16+【兼容服务端】[地狱门加载器].png",
+    "path": "images/单片地狱门加载器1.16+【兼容服务端】[地狱门加载器].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/单片地狱门加载器1.16+【兼容服务端】[地狱门加载器].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
     "name": "单片地狱门加载器（地狱部分）【兼容服务端】[地狱门加载器].png",
     "path": "images/单片地狱门加载器（地狱部分）【兼容服务端】[地狱门加载器].png",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/单片地狱门加载器（地狱部分）【兼容服务端】[地狱门加载器].png",
@@ -745,7 +752,7 @@
     "name": "单片地狱门加载器1.16+【兼容服务端】[地狱门加载器].litematic",
     "path": "litematic/单片地狱门加载器1.16+【兼容服务端】[地狱门加载器].litematic",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/单片地狱门加载器1.16+【兼容服务端】[地狱门加载器].litematic",
-    "preview": "files/notFound.png",
+    "preview": "files/images/单片地狱门加载器1.16+【兼容服务端】[地狱门加载器].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/单片地狱门加载器1.16+【兼容服务端】[地狱门加载器].litematic"
   },
   {
