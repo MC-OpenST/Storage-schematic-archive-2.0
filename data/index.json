@@ -406,6 +406,13 @@
     "schematio": null
   },
   {
+    "name": "水流收集四边形大宗 by Yi_Breeze[四边形大宗][编码相关].png",
+    "path": "images/水流收集四边形大宗 by Yi_Breeze[四边形大宗][编码相关].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/水流收集四边形大宗 by Yi_Breeze[四边形大宗][编码相关].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
     "name": "金合欢Leo Ui 10箱全物品单片（主动漏斗）[全物品单片].png",
     "path": "images/金合欢Leo Ui 10箱全物品单片（主动漏斗）[全物品单片].png",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/金合欢Leo Ui 10箱全物品单片（主动漏斗）[全物品单片].png",
@@ -857,7 +864,7 @@
     "name": "水流收集四边形大宗 by Yi_Breeze[四边形大宗][编码相关].litematic",
     "path": "litematic/水流收集四边形大宗 by Yi_Breeze[四边形大宗][编码相关].litematic",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/水流收集四边形大宗 by Yi_Breeze[四边形大宗][编码相关].litematic",
-    "preview": "files/notFound.png",
+    "preview": "files/images/水流收集四边形大宗 by Yi_Breeze[四边形大宗][编码相关].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/水流收集四边形大宗 by Yi_Breeze[四边形大宗][编码相关].litematic"
   },
   {
