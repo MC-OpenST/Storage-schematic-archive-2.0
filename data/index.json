@@ -14,6 +14,13 @@
     "schematio": null
   },
   {
+    "name": "29_8K红石原件自动合成系统V2[红石合成站].png",
+    "path": "images/29_8K红石原件自动合成系统V2[红石合成站].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/29_8K红石原件自动合成系统V2[红石合成站].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
     "name": "Fully_Locked_Storage_Input_System_1.12[SIS无实体输入].png",
     "path": "images/Fully_Locked_Storage_Input_System_1.12[SIS无实体输入].png",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/Fully_Locked_Storage_Input_System_1.12[SIS无实体输入].png",
@@ -206,7 +213,7 @@
     "name": "29_8K红石原件自动合成系统V2[红石合成站].zip",
     "path": "litematic/29_8K红石原件自动合成系统V2[红石合成站].zip",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/29_8K红石原件自动合成系统V2[红石合成站].zip",
-    "preview": "files/notFound.png",
+    "preview": "files/images/29_8K红石原件自动合成系统V2[红石合成站].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/29_8K红石原件自动合成系统V2[红石合成站].zip"
   },
   {
