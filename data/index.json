@@ -294,6 +294,13 @@
     "schematio": null
   },
   {
+    "name": "【无实体地狱门加载器 地狱】[地狱门加载器].png",
+    "path": "images/【无实体地狱门加载器 地狱】[地狱门加载器].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/【无实体地狱门加载器 地狱】[地狱门加载器].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
     "name": "三水无残留自出潜影盒展示[潜影盒展示].png",
     "path": "images/三水无残留自出潜影盒展示[潜影盒展示].png",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/三水无残留自出潜影盒展示[潜影盒展示].png",
@@ -661,7 +668,7 @@
     "name": "【无实体地狱门加载器 地狱】[地狱门加载器].litematic",
     "path": "litematic/【无实体地狱门加载器 地狱】[地狱门加载器].litematic",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/【无实体地狱门加载器 地狱】[地狱门加载器].litematic",
-    "preview": "files/notFound.png",
+    "preview": "files/images/【无实体地狱门加载器 地狱】[地狱门加载器].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/【无实体地狱门加载器 地狱】[地狱门加载器].litematic"
   },
   {
