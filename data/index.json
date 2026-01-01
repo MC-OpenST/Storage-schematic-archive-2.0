@@ -133,6 +133,13 @@
     "schematio": null
   },
   {
+    "name": "强模相关逻辑运算及进制转换1.12_HSS_T101[编码相关].png",
+    "path": "images/强模相关逻辑运算及进制转换1.12_HSS_T101[编码相关].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/强模相关逻辑运算及进制转换1.12_HSS_T101[编码相关].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
     "name": "金合欢Leo Ui 10箱全物品单片（主动漏斗）[全物品单片].png",
     "path": "images/金合欢Leo Ui 10箱全物品单片（主动漏斗）[全物品单片].png",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/金合欢Leo Ui 10箱全物品单片（主动漏斗）[全物品单片].png",
@@ -556,7 +563,7 @@
     "name": "强模相关逻辑运算及进制转换1.12_HSS_T101[编码相关].zip",
     "path": "litematic/强模相关逻辑运算及进制转换1.12_HSS_T101[编码相关].zip",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/强模相关逻辑运算及进制转换1.12_HSS_T101[编码相关].zip",
-    "preview": "files/notFound.png",
+    "preview": "files/images/强模相关逻辑运算及进制转换1.12_HSS_T101[编码相关].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/强模相关逻辑运算及进制转换1.12_HSS_T101[编码相关].zip"
   },
   {
