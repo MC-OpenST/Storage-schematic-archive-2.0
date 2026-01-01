@@ -420,6 +420,27 @@
     "schematio": null
   },
   {
+    "name": "盒子合并器v3.0 by77[盒子合并].png",
+    "path": "images/盒子合并器v3.0 by77[盒子合并].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/盒子合并器v3.0 by77[盒子合并].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
+    "name": "竖式移位寄存器[编码相关].png",
+    "path": "images/竖式移位寄存器[编码相关].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/竖式移位寄存器[编码相关].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
+    "name": "终极细雪箱盒展示(44gt)[潜影盒展示].png",
+    "path": "images/终极细雪箱盒展示(44gt)[潜影盒展示].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/终极细雪箱盒展示(44gt)[潜影盒展示].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
     "name": "金合欢Leo Ui 10箱全物品单片（主动漏斗）[全物品单片].png",
     "path": "images/金合欢Leo Ui 10箱全物品单片（主动漏斗）[全物品单片].png",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/金合欢Leo Ui 10箱全物品单片（主动漏斗）[全物品单片].png",
@@ -885,21 +906,21 @@
     "name": "盒子合并器v3.0 by77[盒子合并].litematic",
     "path": "litematic/盒子合并器v3.0 by77[盒子合并].litematic",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/盒子合并器v3.0 by77[盒子合并].litematic",
-    "preview": "files/notFound.png",
+    "preview": "files/images/盒子合并器v3.0 by77[盒子合并].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/盒子合并器v3.0 by77[盒子合并].litematic"
   },
   {
     "name": "竖式移位寄存器[编码相关].litematic",
     "path": "litematic/竖式移位寄存器[编码相关].litematic",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/竖式移位寄存器[编码相关].litematic",
-    "preview": "files/notFound.png",
+    "preview": "files/images/竖式移位寄存器[编码相关].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/竖式移位寄存器[编码相关].litematic"
   },
   {
     "name": "终极细雪箱盒展示(44gt)[潜影盒展示].litematic",
     "path": "litematic/终极细雪箱盒展示(44gt)[潜影盒展示].litematic",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/终极细雪箱盒展示(44gt)[潜影盒展示].litematic",
-    "preview": "files/notFound.png",
+    "preview": "files/images/终极细雪箱盒展示(44gt)[潜影盒展示].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/终极细雪箱盒展示(44gt)[潜影盒展示].litematic"
   },
   {
