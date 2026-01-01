@@ -399,6 +399,13 @@
     "schematio": null
   },
   {
+    "name": "无延迟比较器链by erraVoxel[编码相关].png",
+    "path": "images/无延迟比较器链by erraVoxel[编码相关].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/无延迟比较器链by erraVoxel[编码相关].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
     "name": "金合欢Leo Ui 10箱全物品单片（主动漏斗）[全物品单片].png",
     "path": "images/金合欢Leo Ui 10箱全物品单片（主动漏斗）[全物品单片].png",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/金合欢Leo Ui 10箱全物品单片（主动漏斗）[全物品单片].png",
@@ -843,7 +850,7 @@
     "name": "无延迟比较器链by erraVoxel[编码相关].litematic",
     "path": "litematic/无延迟比较器链by erraVoxel[编码相关].litematic",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/无延迟比较器链by erraVoxel[编码相关].litematic",
-    "preview": "files/notFound.png",
+    "preview": "files/images/无延迟比较器链by erraVoxel[编码相关].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/无延迟比较器链by erraVoxel[编码相关].litematic"
   },
   {
