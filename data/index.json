@@ -413,6 +413,13 @@
     "schematio": null
   },
   {
+    "name": "盒子南瓜地狱门加载器 全锁  by麋鹿[地狱门加载器].png",
+    "path": "images/盒子南瓜地狱门加载器 全锁  by麋鹿[地狱门加载器].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/盒子南瓜地狱门加载器 全锁  by麋鹿[地狱门加载器].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
     "name": "金合欢Leo Ui 10箱全物品单片（主动漏斗）[全物品单片].png",
     "path": "images/金合欢Leo Ui 10箱全物品单片（主动漏斗）[全物品单片].png",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/金合欢Leo Ui 10箱全物品单片（主动漏斗）[全物品单片].png",
@@ -871,7 +878,7 @@
     "name": "盒子南瓜地狱门加载器 全锁  by麋鹿[地狱门加载器].litematic",
     "path": "litematic/盒子南瓜地狱门加载器 全锁  by麋鹿[地狱门加载器].litematic",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/盒子南瓜地狱门加载器 全锁  by麋鹿[地狱门加载器].litematic",
-    "preview": "files/notFound.png",
+    "preview": "files/images/盒子南瓜地狱门加载器 全锁  by麋鹿[地狱门加载器].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/盒子南瓜地狱门加载器 全锁  by麋鹿[地狱门加载器].litematic"
   },
   {
