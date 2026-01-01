@@ -385,6 +385,13 @@
     "schematio": null
   },
   {
+    "name": "强模移位寄存器t1_hss_hex_shift_register_1_12_v1_2[编码相关].png",
+    "path": "images/强模移位寄存器t1_hss_hex_shift_register_1_12_v1_2[编码相关].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/强模移位寄存器t1_hss_hex_shift_register_1_12_v1_2[编码相关].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
     "name": "打包机专区[打包机].png",
     "path": "images/打包机专区[打包机].png",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/打包机专区[打包机].png",
@@ -822,7 +829,7 @@
     "name": "强模移位寄存器t1_hss_hex_shift_register_1_12_v1_2[编码相关].litematic",
     "path": "litematic/强模移位寄存器t1_hss_hex_shift_register_1_12_v1_2[编码相关].litematic",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/强模移位寄存器t1_hss_hex_shift_register_1_12_v1_2[编码相关].litematic",
-    "preview": "files/notFound.png",
+    "preview": "files/images/强模移位寄存器t1_hss_hex_shift_register_1_12_v1_2[编码相关].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/强模移位寄存器t1_hss_hex_shift_register_1_12_v1_2[编码相关].litematic"
   },
   {
