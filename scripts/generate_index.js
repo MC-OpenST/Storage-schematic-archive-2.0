@@ -63,7 +63,7 @@ const indexData = allFiles.map(f => {
     let preview = defaultPreview;
     let schematio = null;
 
-    if (ext === ".litematic") {
+    if (ext === ".litematic" || ext === ".zip") {
         preview = findPreview(name);
         schematio = schematioUrl(f);
     }
@@ -86,3 +86,4 @@ fs.mkdirSync(path.dirname(indexFile), { recursive: true });
 fs.writeFileSync(indexFile, JSON.stringify(indexData, null, 2));
 
 console.log(`生成完成，共收录 ${allFiles.length} 个文件`);
+
