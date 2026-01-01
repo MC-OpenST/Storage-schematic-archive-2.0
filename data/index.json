@@ -140,6 +140,13 @@
     "schematio": null
   },
   {
+    "name": "Global reset variable loader 4.4[打包机][自适应打包机].png",
+    "path": "images/Global reset variable loader 4.4[打包机][自适应打包机].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/Global reset variable loader 4.4[打包机][自适应打包机].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
     "name": "LessNoisyMIS[MIS多物品分类].png",
     "path": "images/LessNoisyMIS[MIS多物品分类].png",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/LessNoisyMIS[MIS多物品分类].png",
@@ -423,7 +430,7 @@
     "name": "Global reset variable loader 4.4[打包机][自适应打包机].litematic",
     "path": "litematic/Global reset variable loader 4.4[打包机][自适应打包机].litematic",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/Global reset variable loader 4.4[打包机][自适应打包机].litematic",
-    "preview": "files/notFound.png",
+    "preview": "files/images/Global reset variable loader 4.4[打包机][自适应打包机].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/Global reset variable loader 4.4[打包机][自适应打包机].litematic"
   },
   {
