@@ -84,6 +84,13 @@
     "schematio": null
   },
   {
+    "name": "Coded storage--By.Hua_Jing[编码相关][远程大宗].png",
+    "path": "images/Coded storage--By.Hua_Jing[编码相关][远程大宗].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/Coded storage--By.Hua_Jing[编码相关][远程大宗].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
     "name": "Fully_Locked_Storage_Input_System_1.12[SIS无实体输入].png",
     "path": "images/Fully_Locked_Storage_Input_System_1.12[SIS无实体输入].png",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/Fully_Locked_Storage_Input_System_1.12[SIS无实体输入].png",
@@ -332,7 +339,7 @@
     "name": "Coded storage--By.Hua_Jing[编码相关][远程大宗].litematic",
     "path": "litematic/Coded storage--By.Hua_Jing[编码相关][远程大宗].litematic",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/Coded storage--By.Hua_Jing[编码相关][远程大宗].litematic",
-    "preview": "files/notFound.png",
+    "preview": "files/images/Coded storage--By.Hua_Jing[编码相关][远程大宗].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/Coded storage--By.Hua_Jing[编码相关][远程大宗].litematic"
   },
   {
