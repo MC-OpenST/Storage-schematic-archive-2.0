@@ -371,6 +371,13 @@
     "schematio": null
   },
   {
+    "name": "弱模纵传[编码相关].png",
+    "path": "images/弱模纵传[编码相关].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/弱模纵传[编码相关].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
     "name": "强模相关逻辑运算及进制转换1.12_HSS_T101[编码相关].png",
     "path": "images/强模相关逻辑运算及进制转换1.12_HSS_T101[编码相关].png",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/强模相关逻辑运算及进制转换1.12_HSS_T101[编码相关].png",
@@ -801,7 +808,7 @@
     "name": "弱模纵传[编码相关].litematic",
     "path": "litematic/弱模纵传[编码相关].litematic",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/弱模纵传[编码相关].litematic",
-    "preview": "files/notFound.png",
+    "preview": "files/images/弱模纵传[编码相关].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/弱模纵传[编码相关].litematic"
   },
   {
