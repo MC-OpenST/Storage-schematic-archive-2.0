@@ -63,13 +63,6 @@
     "schematio": null
   },
   {
-    "name": "PyraLeft_TIS_3w%5B%E5%85%A8%E7%89%A9%E5%93%81%E5%8D%95%E7%89%87%5D.png",
-    "path": "images/PyraLeft_TIS_3w%5B%E5%85%A8%E7%89%A9%E5%93%81%E5%8D%95%E7%89%87%5D.png",
-    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/PyraLeft_TIS_3w%5B%E5%85%A8%E7%89%A9%E5%93%81%E5%8D%95%E7%89%87%5D.png",
-    "preview": "files/notFound.png",
-    "schematio": null
-  },
-  {
     "name": "PyraLeft_TIS_3w[全物品单片].png",
     "path": "images/PyraLeft_TIS_3w[全物品单片].png",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/PyraLeft_TIS_3w[全物品单片].png",
@@ -367,7 +360,7 @@
     "name": "PyraLeft_TIS_3w%5B%E5%85%A8%E7%89%A9%E5%93%81%E5%8D%95%E7%89%87%5D.litematic",
     "path": "litematic/PyraLeft_TIS_3w%5B%E5%85%A8%E7%89%A9%E5%93%81%E5%8D%95%E7%89%87%5D.litematic",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/PyraLeft_TIS_3w%5B%E5%85%A8%E7%89%A9%E5%93%81%E5%8D%95%E7%89%87%5D.litematic",
-    "preview": "files/images/PyraLeft_TIS_3w%5B%E5%85%A8%E7%89%A9%E5%93%81%E5%8D%95%E7%89%87%5D.png",
+    "preview": "files/notFound.png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/PyraLeft_TIS_3w%5B%E5%85%A8%E7%89%A9%E5%93%81%E5%8D%95%E7%89%87%5D.litematic"
   },
   {
