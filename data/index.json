@@ -112,6 +112,13 @@
     "schematio": null
   },
   {
+    "name": "Encoded Bulk v1.1 by linchien26[编码相关][远程大宗].png",
+    "path": "images/Encoded Bulk v1.1 by linchien26[编码相关][远程大宗].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/Encoded Bulk v1.1 by linchien26[编码相关][远程大宗].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
     "name": "Fully_Locked_Storage_Input_System_1.12[SIS无实体输入].png",
     "path": "images/Fully_Locked_Storage_Input_System_1.12[SIS无实体输入].png",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/Fully_Locked_Storage_Input_System_1.12[SIS无实体输入].png",
@@ -388,7 +395,7 @@
     "name": "Encoded Bulk v1.1 by linchien26[编码相关][远程大宗].litematic",
     "path": "litematic/Encoded Bulk v1.1 by linchien26[编码相关][远程大宗].litematic",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/Encoded Bulk v1.1 by linchien26[编码相关][远程大宗].litematic",
-    "preview": "files/notFound.png",
+    "preview": "files/images/Encoded Bulk v1.1 by linchien26[编码相关][远程大宗].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/Encoded Bulk v1.1 by linchien26[编码相关][远程大宗].litematic"
   },
   {
