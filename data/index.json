@@ -186,7 +186,7 @@
     "path": "litematic/29_8K红石原件自动合成系统V2[红石合成站].zip",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/29_8K红石原件自动合成系统V2[红石合成站].zip",
     "preview": "files/notFound.png",
-    "schematio": null
+    "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/29_8K红石原件自动合成系统V2[红石合成站].zip"
   },
   {
     "name": "3gt无延迟移位寄存器[编码相关].rar",
@@ -200,7 +200,7 @@
     "path": "litematic/3wt_fullclear_6×_mixed[打包机][混杂打包].zip",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/3wt_fullclear_6×_mixed[打包机][混杂打包].zip",
     "preview": "files/notFound.png",
-    "schematio": null
+    "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/3wt_fullclear_6×_mixed[打包机][混杂打包].zip"
   },
   {
     "name": "4bit二进制无状态解码4bit-timing-decoder-dropper-output[解码器].litematic",
@@ -333,7 +333,7 @@
     "path": "litematic/OSS小元件[编码相关].zip",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/OSS小元件[编码相关].zip",
     "preview": "files/notFound.png",
-    "schematio": null
+    "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/OSS小元件[编码相关].zip"
   },
   {
     "name": "PI002_Ultimate_Storage_Input_v5[SIS无实体输入].litematic",
@@ -375,7 +375,7 @@
     "path": "litematic/Variable Filter V2.1b-r4[打包机][自适应打包机].zip",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/Variable Filter V2.1b-r4[打包机][自适应打包机].zip",
     "preview": "files/notFound.png",
-    "schematio": null
+    "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/Variable Filter V2.1b-r4[打包机][自适应打包机].zip"
   },
   {
     "name": "YAMS V2.3 MB 1.20[仓库成品].litematic",
@@ -550,7 +550,7 @@
     "path": "litematic/强模相关逻辑运算及进制转换1.12_HSS_T101[编码相关].zip",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/强模相关逻辑运算及进制转换1.12_HSS_T101[编码相关].zip",
     "preview": "files/notFound.png",
-    "schematio": null
+    "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/强模相关逻辑运算及进制转换1.12_HSS_T101[编码相关].zip"
   },
   {
     "name": "强模移位寄存器t1_hss_hex_shift_register_1_12_v1_2[编码相关].litematic",
@@ -564,7 +564,7 @@
     "path": "litematic/打包机专区[打包机].zip",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/打包机专区[打包机].zip",
     "preview": "files/notFound.png",
-    "schematio": null
+    "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/打包机专区[打包机].zip"
   },
   {
     "name": "无延迟比较器链by erraVoxel[编码相关].litematic",
@@ -619,8 +619,8 @@
     "name": "金合欢盒子分类v5 相关设计[盒子分类].zip",
     "path": "litematic/金合欢盒子分类v5 相关设计[盒子分类].zip",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/金合欢盒子分类v5 相关设计[盒子分类].zip",
-    "preview": "files/notFound.png",
-    "schematio": null
+    "preview": "files/images/金合欢盒子分类v5 相关设计[盒子分类].png",
+    "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/金合欢盒子分类v5 相关设计[盒子分类].zip"
   },
   {
     "name": "notFound.png",
