@@ -322,6 +322,13 @@
     "schematio": null
   },
   {
+    "name": "全锁预分类整流器[整流器].png",
+    "path": "images/全锁预分类整流器[整流器].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/全锁预分类整流器[整流器].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
     "name": "多物品分类MIS4.2漏斗全锁standard_mis4.2_storage_v0.6.2_hopperlocked[MIS多物品分类].png",
     "path": "images/多物品分类MIS4.2漏斗全锁standard_mis4.2_storage_v0.6.2_hopperlocked[MIS多物品分类].png",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/多物品分类MIS4.2漏斗全锁standard_mis4.2_storage_v0.6.2_hopperlocked[MIS多物品分类].png",
@@ -710,7 +717,7 @@
     "name": "全锁预分类整流器[整流器].litematic",
     "path": "litematic/全锁预分类整流器[整流器].litematic",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/全锁预分类整流器[整流器].litematic",
-    "preview": "files/notFound.png",
+    "preview": "files/images/全锁预分类整流器[整流器].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/全锁预分类整流器[整流器].litematic"
   },
   {
