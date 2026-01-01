@@ -1,5 +1,12 @@
 [
   {
+    "name": "1.13_6_and_7_Bit_Rail_Bud_Decoders[解码器].png",
+    "path": "images/1.13_6_and_7_Bit_Rail_Bud_Decoders[解码器].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/1.13_6_and_7_Bit_Rail_Bud_Decoders[解码器].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
     "name": "16gt_MBS_77_v2.0[MBS多种类潜影盒分类].png",
     "path": "images/16gt_MBS_77_v2.0[MBS多种类潜影盒分类].png",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/16gt_MBS_77_v2.0[MBS多种类潜影盒分类].png",
@@ -171,7 +178,7 @@
     "name": "1.13_6_and_7_Bit_Rail_Bud_Decoders[解码器].litematic",
     "path": "litematic/1.13_6_and_7_Bit_Rail_Bud_Decoders[解码器].litematic",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/1.13_6_and_7_Bit_Rail_Bud_Decoders[解码器].litematic",
-    "preview": "files/notFound.png",
+    "preview": "files/images/1.13_6_and_7_Bit_Rail_Bud_Decoders[解码器].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/1.13_6_and_7_Bit_Rail_Bud_Decoders[解码器].litematic"
   },
   {
