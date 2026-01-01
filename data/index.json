@@ -203,6 +203,13 @@
     "schematio": null
   },
   {
+    "name": "SBCL_NE-Kahyxen[地狱门加载器].png",
+    "path": "images/SBCL_NE-Kahyxen[地狱门加载器].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/SBCL_NE-Kahyxen[地狱门加载器].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
     "name": "Variable Filter V2.1b-r4[打包机][自适应打包机].png",
     "path": "images/Variable Filter V2.1b-r4[打包机][自适应打包机].png",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/Variable Filter V2.1b-r4[打包机][自适应打包机].png",
@@ -535,7 +542,7 @@
     "name": "SBCL_NE-Kahyxen[地狱门加载器].litematic",
     "path": "litematic/SBCL_NE-Kahyxen[地狱门加载器].litematic",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/SBCL_NE-Kahyxen[地狱门加载器].litematic",
-    "preview": "files/notFound.png",
+    "preview": "files/images/SBCL_NE-Kahyxen[地狱门加载器].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/SBCL_NE-Kahyxen[地狱门加载器].litematic"
   },
   {
