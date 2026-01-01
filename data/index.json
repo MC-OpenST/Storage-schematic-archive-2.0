@@ -133,6 +133,13 @@
     "schematio": null
   },
   {
+    "name": "金合欢盒子分类v5 相关设计[盒子分类].png",
+    "path": "images/金合欢盒子分类v5 相关设计[盒子分类].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/金合欢盒子分类v5 相关设计[盒子分类].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
     "name": "1.13_6_and_7_Bit_Rail_Bud_Decoders[解码器].litematic",
     "path": "litematic/1.13_6_and_7_Bit_Rail_Bud_Decoders[解码器].litematic",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/1.13_6_and_7_Bit_Rail_Bud_Decoders[解码器].litematic",
@@ -607,6 +614,13 @@
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/金合欢Leo Ui 10箱全物品单片（主动漏斗）[全物品单片].litematic",
     "preview": "files/images/金合欢Leo Ui 10箱全物品单片（主动漏斗）[全物品单片].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/金合欢Leo Ui 10箱全物品单片（主动漏斗）[全物品单片].litematic"
+  },
+  {
+    "name": "金合欢盒子分类v5 相关设计[盒子分类].litematic",
+    "path": "litematic/金合欢盒子分类v5 相关设计[盒子分类].litematic",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/金合欢盒子分类v5 相关设计[盒子分类].litematic",
+    "preview": "files/images/金合欢盒子分类v5 相关设计[盒子分类].png",
+    "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/金合欢盒子分类v5 相关设计[盒子分类].litematic"
   },
   {
     "name": "金合欢盒子分类v5 相关设计[盒子分类].zip",
