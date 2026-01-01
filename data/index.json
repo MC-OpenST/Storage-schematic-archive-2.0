@@ -182,6 +182,13 @@
     "schematio": null
   },
   {
+    "name": "PyraLeft_1.20_Unstackable_Sorter[不可堆叠分类].png",
+    "path": "images/PyraLeft_1.20_Unstackable_Sorter[不可堆叠分类].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/PyraLeft_1.20_Unstackable_Sorter[不可堆叠分类].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
     "name": "PyraLeft_TIS_3w[全物品单片].png",
     "path": "images/PyraLeft_TIS_3w[全物品单片].png",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/PyraLeft_TIS_3w[全物品单片].png",
@@ -493,7 +500,7 @@
     "name": "PyraLeft_1.20_Unstackable_Sorter[不可堆叠分类].litematic",
     "path": "litematic/PyraLeft_1.20_Unstackable_Sorter[不可堆叠分类].litematic",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/PyraLeft_1.20_Unstackable_Sorter[不可堆叠分类].litematic",
-    "preview": "files/notFound.png",
+    "preview": "files/images/PyraLeft_1.20_Unstackable_Sorter[不可堆叠分类].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/PyraLeft_1.20_Unstackable_Sorter[不可堆叠分类].litematic"
   },
   {
