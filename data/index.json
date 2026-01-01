@@ -49,6 +49,13 @@
     "schematio": null
   },
   {
+    "name": "4bit二进制无状态解码4bit-timing-decoder-dropper-output[解码器].png",
+    "path": "images/4bit二进制无状态解码4bit-timing-decoder-dropper-output[解码器].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/4bit二进制无状态解码4bit-timing-decoder-dropper-output[解码器].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
     "name": "Fully_Locked_Storage_Input_System_1.12[SIS无实体输入].png",
     "path": "images/Fully_Locked_Storage_Input_System_1.12[SIS无实体输入].png",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/Fully_Locked_Storage_Input_System_1.12[SIS无实体输入].png",
@@ -262,7 +269,7 @@
     "name": "4bit二进制无状态解码4bit-timing-decoder-dropper-output[解码器].litematic",
     "path": "litematic/4bit二进制无状态解码4bit-timing-decoder-dropper-output[解码器].litematic",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/4bit二进制无状态解码4bit-timing-decoder-dropper-output[解码器].litematic",
-    "preview": "files/notFound.png",
+    "preview": "files/images/4bit二进制无状态解码4bit-timing-decoder-dropper-output[解码器].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/4bit二进制无状态解码4bit-timing-decoder-dropper-output[解码器].litematic"
   },
   {
