@@ -147,6 +147,13 @@
     "schematio": null
   },
   {
+    "name": "Item_Chunkloader_1.19[地狱门加载器].png",
+    "path": "images/Item_Chunkloader_1.19[地狱门加载器].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/Item_Chunkloader_1.19[地狱门加载器].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
     "name": "LessNoisyMIS[MIS多物品分类].png",
     "path": "images/LessNoisyMIS[MIS多物品分类].png",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/LessNoisyMIS[MIS多物品分类].png",
@@ -437,7 +444,7 @@
     "name": "Item_Chunkloader_1.19[地狱门加载器].litematic",
     "path": "litematic/Item_Chunkloader_1.19[地狱门加载器].litematic",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/Item_Chunkloader_1.19[地狱门加载器].litematic",
-    "preview": "files/notFound.png",
+    "preview": "files/images/Item_Chunkloader_1.19[地狱门加载器].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/Item_Chunkloader_1.19[地狱门加载器].litematic"
   },
   {
