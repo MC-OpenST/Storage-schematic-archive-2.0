@@ -91,6 +91,13 @@
     "schematio": null
   },
   {
+    "name": "CommandLeo_1.20_Ultimate_FHL_Unstackable_Sorter[不可堆叠分类].png",
+    "path": "images/CommandLeo_1.20_Ultimate_FHL_Unstackable_Sorter[不可堆叠分类].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/CommandLeo_1.20_Ultimate_FHL_Unstackable_Sorter[不可堆叠分类].png",
+    "preview": "files/notFound.png",
+    "schematio": null
+  },
+  {
     "name": "Fully_Locked_Storage_Input_System_1.12[SIS无实体输入].png",
     "path": "images/Fully_Locked_Storage_Input_System_1.12[SIS无实体输入].png",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/Fully_Locked_Storage_Input_System_1.12[SIS无实体输入].png",
@@ -346,7 +353,7 @@
     "name": "CommandLeo_1.20_Ultimate_FHL_Unstackable_Sorter[不可堆叠分类].litematic",
     "path": "litematic/CommandLeo_1.20_Ultimate_FHL_Unstackable_Sorter[不可堆叠分类].litematic",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/CommandLeo_1.20_Ultimate_FHL_Unstackable_Sorter[不可堆叠分类].litematic",
-    "preview": "files/notFound.png",
+    "preview": "files/images/CommandLeo_1.20_Ultimate_FHL_Unstackable_Sorter[不可堆叠分类].png",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/CommandLeo_1.20_Ultimate_FHL_Unstackable_Sorter[不可堆叠分类].litematic"
   },
   {
