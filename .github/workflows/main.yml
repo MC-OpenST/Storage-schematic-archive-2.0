@@ -2,8 +2,9 @@ name: Build Index
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
+    paths-ignore:
+      - 'data/*.json'
   workflow_dispatch:
 
 jobs:
@@ -14,6 +15,7 @@ jobs:
       - uses: actions/checkout@v3
         with:
           persist-credentials: false
+          ref: main
 
       - uses: actions/setup-node@v3
         with:
@@ -22,10 +24,14 @@ jobs:
       - run: npm install
       - run: npm run build
 
-      - name: Commit index.json
+      - name: Commit index data
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/index.json
-          git commit -m "chore: update index.json [skip ci]" || echo "No changes to commit"
+
+          git pull --rebase https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/${{ github.repository }} main
+
+          git add data/*.json
+          git commit -m "chore: update index data [skip ci]" || echo "No changes to commit"
+
           git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/${{ github.repository }} HEAD:main
