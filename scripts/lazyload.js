@@ -1,9 +1,11 @@
 export function initLazyLoad(options = {}) {
     const container = options.container || document.getElementById('file-list');
-    const threshold = options.threshold || 300; // 距离多少可视像素时加载
-
+    const threshold = options.threshold || 300; // 提前加载距离
     if (!container) return;
 
+    const images = new Set();
+
+    // IntersectionObserver 懒加载
     const observer = new IntersectionObserver((entries, obs) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -17,18 +19,68 @@ export function initLazyLoad(options = {}) {
         });
     }, { rootMargin: `${threshold}px` });
 
-    // 观察现有 img[data-src]
-    container.querySelectorAll('img[data-src]').forEach(img => observer.observe(img));
+    // 注册新图片
+    function observeImg(img) {
+        if (img && img.dataset.src) {
+            images.add(img);
+            observer.observe(img);
+        }
+    }
 
-    // 监听未来可能插入的图片（MutationObserver）
+    // 初始图片
+    container.querySelectorAll('img[data-src]').forEach(observeImg);
+
+    // 监听 DOM 新增
     const mutationObserver = new MutationObserver(mutations => {
         mutations.forEach(m => {
             m.addedNodes.forEach(node => {
-                if (node.nodeType === 1) { // 元素节点
-                    node.querySelectorAll && node.querySelectorAll('img[data-src]').forEach(img => observer.observe(img));
+                if (node.nodeType === 1) {
+                    if (node.matches('.file-item')) {
+                        node.querySelectorAll('img[data-src]').forEach(observeImg);
+                    } else {
+                        node.querySelectorAll('.file-item img[data-src]').forEach(observeImg);
+                    }
                 }
             });
         });
     });
     mutationObserver.observe(container, { childList: true, subtree: true });
+
+    // 卸载不可见图片
+    function unloadOffscreenImages() {
+        const viewportTop = window.scrollY;
+        const viewportBottom = viewportTop + window.innerHeight;
+
+        images.forEach(img => {
+            const item = img.closest('.file-item');
+            if (!item) return;
+
+            const rect = item.getBoundingClientRect();
+            const itemTop = rect.top + window.scrollY;
+            const itemBottom = itemTop + rect.height;
+
+            if (itemBottom < viewportTop || itemTop > viewportBottom) {
+                // 卸载图片，保留路径
+                if (img.src) {
+                    img.dataset.src = img.src;
+                    img.src = "";
+                    observer.observe(img); // 重新纳入懒加载
+                }
+            } else {
+                // 回填可见图片
+                if (!img.src && img.dataset.src) {
+                    img.src = img.dataset.src;
+                    img.removeAttribute('data-src');
+                    observer.unobserve(img);
+                }
+            }
+        });
+    }
+
+    // 停止滚动后卸载
+    let scrollTimer;
+    window.addEventListener('scroll', () => {
+        clearTimeout(scrollTimer);
+        scrollTimer = setTimeout(unloadOffscreenImages, 150);
+    });
 }

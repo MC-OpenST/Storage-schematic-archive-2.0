@@ -1,89 +1,87 @@
-import fs from "fs";
+import fs from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// 仓库根目录
+// 仓库信息统一声明
+const GITHUB_USER = "MC-OpenST";
+const GITHUB_REPO = "Storage-schematic-archive-2.0";
+const GITHUB_BASE_RAW = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/files`;
+
 const repoRoot = path.resolve(__dirname, "..");
-
 const filesDir = path.join(repoRoot, "files");
-const litematicDir = path.join(filesDir, "litematic");
 const imagesDir = path.join(filesDir, "images");
-const indexFile = path.join(repoRoot, "data", "index.json");
+const dataDir = path.join(repoRoot, "data");
+const mainIndexFile = path.join(dataDir, "index.json");
 
-// 保证目录存在
-if (!fs.existsSync(filesDir)) {
-    console.error("files 目录不存在: ", filesDir);
-    process.exit(1);
-}
+const batchSize = 30; // 每个分片 JSON 条数
+const defaultPreview = "files/notFound.png";
 
-// 递归收集文件
-function walk(dir, filelist = []) {
-    const files = fs.readdirSync(dir);
-    files.forEach(file => {
-        const filepath = path.join(dir, file);
-        const stat = fs.statSync(filepath);
-
-        if (stat.isDirectory()) {
-            walk(filepath, filelist);
+// 异步递归扫描文件夹
+async function walk(dir, baseDir = dir) {
+    let filelist = [];
+    const files = await fs.readdir(dir, { withFileTypes: true });
+    for (const file of files) {
+        const fullPath = path.join(dir, file.name);
+        if (file.isDirectory()) {
+            const nested = await walk(fullPath, baseDir);
+            filelist = filelist.concat(nested);
         } else {
-            filelist.push(path.relative(filesDir, filepath).replace(/\\/g, "/"));
+            filelist.push(path.relative(baseDir, fullPath).replace(/\\/g, "/"));
         }
-    });
+    }
     return filelist;
 }
 
-const allFiles = walk(filesDir);
-
-// 默认预览图
-const defaultPreview = "files/notFound.png";
-
-// 匹配函数：查找同名图片
-function findPreview(baseName) {
-    if (!fs.existsSync(imagesDir)) return defaultPreview;
-    const candidates = fs.readdirSync(imagesDir);
-    const match = candidates.find(img => path.parse(img).name === baseName);
-    return match ? `files/images/${match}` : defaultPreview;
+// 构建图片 Map：basename -> preview path
+async function buildImageMap() {
+    const map = new Map();
+    try {
+        const imgs = await fs.readdir(imagesDir);
+        imgs.forEach(img => {
+            map.set(path.parse(img).name, `files/images/${img}`);
+        });
+    } catch {
+        // imagesDir 不存在
+    }
+    return map;
 }
 
-// 生成 schemat.io 链接
-function schematioUrl(filePath) {
-    const repo = "Storage-schematic-archive-2.0";
-    const user = "MC-OpenST";
-    return `https://schemat.io/view?url=https://raw.githubusercontent.com/${user}/${repo}/main/files/${filePath}`;
-}
+// 生成分片 JSON
+async function generateIndex() {
+    await fs.mkdir(dataDir, { recursive: true });
 
-// 生成 index 数据
-const indexData = allFiles.map(f => {
-    const ext = path.extname(f).toLowerCase();
-    const name = path.basename(f, ext);
+    const allFiles = await walk(filesDir);
+    const imageMap = await buildImageMap();
 
-    let preview = defaultPreview;
-    let schematio = null;
+    const batches = [];
+    for (let i = 0; i < allFiles.length; i += batchSize) {
+        const batch = allFiles.slice(i, i + batchSize).map(f => {
+            const ext = path.extname(f).toLowerCase();
+            const name = path.basename(f, ext);
+            const preview = imageMap.get(name) || defaultPreview;
+            const rawUrl = `${GITHUB_BASE_RAW}/${f}`;
+            const schematio = (ext === ".litematic" || ext === ".zip")
+                ? `https://schemat.io/view?url=${rawUrl}`
+                : null;
 
-    if (ext === ".litematic" || ext === ".zip") {
-        preview = findPreview(name);
-        schematio = schematioUrl(f);
+            return { name: path.basename(f), path: f, preview, rawUrl, schematio };
+        });
+
+        const batchFile = path.join(dataDir, `index-batch-${i / batchSize + 1}.json`);
+        await fs.writeFile(batchFile, JSON.stringify(batch, null, 2));
+        batches.push({ name: `Batch ${i / batchSize + 1}`, url: `data/${path.basename(batchFile)}` });
     }
 
-    const repo = "Storage-schematic-archive-2.0";
-    const user = "MC-OpenST";
-    const rawUrl = `https://raw.githubusercontent.com/${user}/${repo}/main/files/${f}`;
+    // 主 index.json，只包含分片信息
+    await fs.writeFile(mainIndexFile, JSON.stringify(batches, null, 2));
 
-    return {
-        name: path.basename(f),
-        path: f,
-        rawUrl, // GitHub 原始地址
-        preview,
-        schematio
-    };
+    console.log(`生成完成，共 ${allFiles.length} 个文件，分 ${batches.length} 个批次`);
+}
+
+generateIndex().catch(err => {
+    console.error(err);
+    process.exit(1);
 });
-
-// 写入 index.json
-fs.mkdirSync(path.dirname(indexFile), { recursive: true });
-fs.writeFileSync(indexFile, JSON.stringify(indexData, null, 2));
-
-console.log(`生成完成，共收录 ${allFiles.length} 个文件`);
-

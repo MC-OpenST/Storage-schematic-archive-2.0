@@ -1,12 +1,22 @@
 const FILE_LIST_URL = "data/index.json";
 const TAGS = ['大宗','空盒仓库','MIS多物品分类','MBS多种类潜影盒分类','细雪展示','SIS无实体输入','编码相关','远程大宗','不可堆叠分类','打包机','混杂打包','自适应打包机','地狱门加载器','分盒器','盒子分类','盒子合并','红石合成站','解码器','潜影盒展示','四边形大宗','整流器','仓库成品','全物品单片']; // 前端
-async function loadFiles() {
-    const filesRes = await fetch(FILE_LIST_URL);
-    const files = await filesRes.json();
 
+async function loadFiles() {
     const container = document.getElementById("file-list");
     const tagContainer = document.getElementById("tag-list");
     const searchInput = document.getElementById("search-input");
+
+    // 1️⃣ 先 fetch 主 index.json（分批信息）
+    const indexRes = await fetch(FILE_LIST_URL);
+    const batches = await indexRes.json();
+
+    // 2️⃣ fetch 每个批次 JSON 并合并到 allFiles
+    let allFiles = [];
+    for (const batch of batches) {
+        const res = await fetch(batch.url);
+        const files = await res.json();
+        allFiles.push(...files);
+    }
 
     // 渲染标签按钮
     TAGS.forEach(tag => {
@@ -15,23 +25,23 @@ async function loadFiles() {
         btn.addEventListener("click", () => filterFiles(tag));
         tagContainer.appendChild(btn);
     });
+
     // 添加清除筛选按钮
     const clearBtn = document.createElement("button");
     clearBtn.id = "clear-btn";
     clearBtn.textContent = "清除筛选";
-    clearBtn.addEventListener("click", () => renderFiles(files));
+    clearBtn.addEventListener("click", () => renderFiles(allFiles));
     tagContainer.appendChild(clearBtn);
 
     function filterFiles(keyword) {
         container.innerHTML = "";
-        const filtered = files.filter(f => f.name.includes(keyword));
+        const filtered = allFiles.filter(f => f.name.includes(keyword));
         renderFiles(filtered);
     }
 
     function renderFiles(list) {
         container.innerHTML = "";
         list.forEach(file => {
-            // 如果是 png 文件，直接跳过
             if(file.name.endsWith(".png")) return;
 
             const item = document.createElement("div");
@@ -42,9 +52,7 @@ async function loadFiles() {
             nameEl.textContent = file.name;
             item.appendChild(nameEl);
 
-            // 走本地 files 路径
             const imgUrl = file.preview;
-
             const img = document.createElement("img");
             img.src = imgUrl;
             img.width = 300;
@@ -78,7 +86,6 @@ async function loadFiles() {
             container.appendChild(item);
 
             // ghfast切换按钮
-            // 滑块部分
             const switchLabel = document.createElement("label");
             const ghfastToggle = document.createElement("input");
             const sliderSpan = document.createElement("span");
@@ -90,7 +97,6 @@ async function loadFiles() {
             switchLabel.appendChild(ghfastToggle);
             switchLabel.appendChild(sliderSpan);
 
-            // 文本 label
             const ghfastText = document.createElement("span");
             let useGhfast = false;
             ghfastToggle.checked = false;
@@ -103,7 +109,7 @@ async function loadFiles() {
 
             btnContainer.appendChild(switchLabel);
             btnContainer.appendChild(ghfastText);
-            // 获取下载链接
+
             function getDownloadUrl(file) {
                 return useGhfast ? `https://ghfast.top/${file.rawUrl}` : file.rawUrl;
             }
@@ -113,12 +119,12 @@ async function loadFiles() {
     // 搜索功能
     searchInput.addEventListener("input", e => {
         const keyword = e.target.value.trim();
-        container.innerHTML = ""; // **清空之前的卡片**
-        if(keyword === "") renderFiles(files);
+        container.innerHTML = "";
+        if(keyword === "") renderFiles(allFiles);
         else filterFiles(keyword);
     });
 
-    renderFiles(files);
+    renderFiles(allFiles);
 }
 
 // 弹窗显示图片
@@ -130,7 +136,7 @@ function showModal(src){
         background: rgba(0,0,0,0.7); display:flex; align-items:center; justify-content:center;
     `;
     const img = document.createElement("img");
-    img.src = src; // 这里不要 encode
+    img.src = src;
     img.style.maxWidth = "90%";
     img.style.maxHeight = "90%";
     modal.appendChild(img);
@@ -139,8 +145,3 @@ function showModal(src){
 }
 
 loadFiles();
-
-
-
-
-
