@@ -23,9 +23,9 @@ a { text-decoration: none; color: #fff; }
     z-index: 1000;
 }
 .logo-container { display: flex; align-items: center; gap: 10px; }
-.logo { width: auto; height: 32px; background-color: white; padding: 5px}
-.site-title { font-size: 18px; font-weight: 600; }
-.top-nav a { margin-left: 20px; color: #bbb; font-weight: 500; transition: color 0.2s; }
+.logo { width: auto; height: 24px; background-color: white; padding: 5px}
+.site-title { font-size: 12px; font-weight: 600; }
+.top-nav a { margin-left: 20px; color: #bbb; font-weight: 500; transition: color 0.2s; font-size: 12px; }
 .top-nav a:hover { color: #fff; }
 
 /* ===== 主体布局 ===== */
@@ -241,7 +241,7 @@ input:checked + .slider:before { transform: translateX(18px); }
     /* 抽屉式侧栏 */
     .sidebar {
         position: fixed;
-        top: 52px;
+        top: 62px;
         left: 0;
         width: 220px;
         height: calc(100% - 52px);
@@ -256,13 +256,14 @@ input:checked + .slider:before { transform: translateX(18px); }
     .sidebar-toggle {
         display: flex;
         position: fixed;
-        top: 64px;
-        left: 8px;
+        top: 74px;
+        left: 10px;
         z-index: 1100;
         background-color: #40B5AD;
         color: #fff;
         border-radius: 6px;
         padding: 6px 10px;
+        border: none;
     }
 
     /* 遮罩层 */
