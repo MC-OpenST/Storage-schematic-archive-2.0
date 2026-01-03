@@ -1,34 +1,61 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OpenST投影仓库</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenST 投影仓库</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.png">
 </head>
 <body>
-<div class="header-bg"></div>
-<img src="favicon.png" alt="OpenST" class="logo">
-<h1 class="title">OpenST投影仓库</h1>
-<header class="header">
-    <a href="https://github.com/MC-OpenST/storage-schematic-archive-2.0" target="_blank" id="github-c">本站Github</a>
-    <a href="https://qun.qq.com/universal-share/share?ac=1&authKey=f3%2BtcY1W8cwr5FnVHqYRjcmpCnMHmzhWl20X3Rfz7JmEyRA2q%2FsyBNGJAvULW1W5&busi_data=eyJncm91cENvZGUiOiI0NDAxMzg5MTYiLCJ0b2tlbiI6IkxCN2pKcGRvb3FjWFpiUDgrVEQya0dVVU9PUHFwVFBMcER4anJNM2dnRTNSNVQwaTUxY0UxTllob25raHpGY20iLCJ1aW4iOiIzODI5MTU2NzE2In0%3D&data=hHLh0imxWvsAqo6bxLAOLaWG5G6St164fHq81TATtYRw3wLxNkQKxlm81M7c8gG3FfjjJZaC6CThT0EPDtJjEw&svctype=4&tempid=h5_group_info" id="qq-c">QQ群</a>
-    <a href="https://discord.gg/6MSCN6JanU" target="_blank" id="discord-c">Discord 分馆</a>
+
+<!-- 顶部栏 -->
+<header class="topbar">
+    <div class="logo-container">
+        <img src="favicon.png" alt="OpenST" class="logo">
+        <span class="site-title">投影仓库</span>
+    </div>
+    <nav class="top-nav">
+        <a href="https://github.com/MC-OpenST/storage-schematic-archive-2.0" target="_blank">Github</a>
+        <a href="https://qun.qq.com/universal-share/share?ac=1&authKey=..." target="_blank">QQ群</a>
+        <a href="https://discord.gg/6MSCN6JanU" target="_blank">Discord</a>
+    </nav>
 </header>
 
-<div id="controls">
-  <input type="text" id="search-input" placeholder="搜索文件...">
-  <div id="tag-list"></div>
+<!-- 主体 -->
+<div class="main-container">
+    <div id="sidebar-overlay"></div>
+    <!-- 左侧 Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-section">
+            <input type="text" id="search-input" placeholder="搜索文件...">
+        </div>
+
+        <div class="sidebar-section" id="tag-list">
+            <!-- 标签按钮由 JS 生成 -->
+        </div>
+
+        <div class="sidebar-section">
+            <button id="clear-btn">清除筛选/回到第一页</button>
+        </div>
+
+        <div class="sidebar-section pagination-sidebar">
+            <button id="prev-page">← 上一页</button>
+            <input type="number" id="page-input" value="1" min="1">
+            <span id="page-info"></span>
+            <button id="next-page">下一页 →</button>
+        </div>
+    </aside>
+
+    <main class="card-container" id="file-list">
+        <!-- 卡片区 -->
+    </main>
 </div>
 
-<div id="file-list"></div>
-<label class="switch">
-    <input type="checkbox" class="ghfast-toggle">
-</label>
-<div style="height: 2000px;"></div>
-
-<script src="scripts/main.js" type="module"></script>
-<script src="scripts/lazyload.js" type="module"></script>
+<!-- 分页 -->
+<div id="pagination"></div>
+<script type="module" src="scripts/main.js"></script>
+<script type="module" src="scripts/config.js"></script>
+<script type="module" src="scripts/lazyload.js"></script>
 </body>
 </html>

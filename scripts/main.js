@@ -1,49 +1,44 @@
+import { showModal, renderPage, applyResponsiveGrid } from "./config.js";
+
 const FILE_LIST_URL = "data/index.json";
-const TAGS = ['大宗','空盒仓库','MIS多物品分类','MBS多种类潜影盒分类','细雪展示','SIS无实体输入','编码相关','远程大宗','不可堆叠分类','打包机','混杂打包','自适应打包机','地狱门加载器','分盒器','盒子分类','盒子合并','红石合成站','解码器','潜影盒展示','四边形大宗','整流器','仓库成品','全物品单片']; // 前端
+const TAGS = [
+    '大宗','空盒仓库','MIS多物品分类','MBS多种类潜影盒分类',
+    '细雪展示','SIS无实体输入','编码相关','远程大宗','不可堆叠分类',
+    '打包机','混杂打包','自适应打包机','地狱门加载器','分盒器',
+    '盒子分类','盒子合并','红石合成站','解码器','潜影盒展示',
+    '四边形大宗','整流器','仓库成品','全物品单片'
+];
 
 async function loadFiles() {
     const container = document.getElementById("file-list");
     const tagContainer = document.getElementById("tag-list");
     const searchInput = document.getElementById("search-input");
+    const prevBtn = document.getElementById("prev-page");
+    const nextBtn = document.getElementById("next-page");
+    const pageInput = document.getElementById("page-input");
+    const pageInfo = document.getElementById("page-info");
+    const clearBtn = document.getElementById("clear-btn");
 
-    // 1️⃣ 先 fetch 主 index.json（分批信息）
+    // 读取 index.json
     const indexRes = await fetch(FILE_LIST_URL);
     const batches = await indexRes.json();
 
-    // 2️⃣ fetch 每个批次 JSON 并合并到 allFiles
     let allFiles = [];
     for (const batch of batches) {
-        const res = await fetch(batch.url);
+        const res = await fetch(new URL(batch.url, window.location.href));
         const files = await res.json();
         allFiles.push(...files);
     }
 
-    // 渲染标签按钮
-    TAGS.forEach(tag => {
-        const btn = document.createElement("button");
-        btn.textContent = tag;
-        btn.addEventListener("click", () => filterFiles(tag));
-        tagContainer.appendChild(btn);
-    });
+    // 过滤 png
+    let visibleFiles = allFiles.filter(f => !f.name.endsWith(".png"));
 
-    // 添加清除筛选按钮
-    const clearBtn = document.createElement("button");
-    clearBtn.id = "clear-btn";
-    clearBtn.textContent = "清除筛选";
-    clearBtn.addEventListener("click", () => renderFiles(allFiles));
-    tagContainer.appendChild(clearBtn);
+    applyResponsiveGrid(container);
 
-    function filterFiles(keyword) {
-        container.innerHTML = "";
-        const filtered = allFiles.filter(f => f.name.includes(keyword));
-        renderFiles(filtered);
-    }
-
+    // 渲染卡片
     function renderFiles(list) {
         container.innerHTML = "";
         list.forEach(file => {
-            if(file.name.endsWith(".png")) return;
-
             const item = document.createElement("div");
             item.className = "file-item";
 
@@ -52,96 +47,86 @@ async function loadFiles() {
             nameEl.textContent = file.name;
             item.appendChild(nameEl);
 
-            const imgUrl = file.preview;
             const img = document.createElement("img");
-            img.src = imgUrl;
-            img.width = 300;
-            img.height = 200;
+            img.src = file.preview;
             img.addEventListener("click", () => showModal(img.src));
             item.appendChild(img);
 
             const btnContainer = document.createElement("div");
+            let useGhfast = false;
 
-            // 下载按钮
             const downloadBtn = document.createElement("button");
             downloadBtn.textContent = "下载";
-            downloadBtn.onclick = () => window.open(getDownloadUrl(file), "_blank");
+            downloadBtn.onclick = () => window.open(useGhfast ? `https://ghfast.top/${file.rawUrl}` : file.rawUrl, "_blank");
             btnContainer.appendChild(downloadBtn);
 
-            // 复制链接按钮
             const copyBtn = document.createElement("button");
             copyBtn.textContent = "复制链接";
-            copyBtn.onclick = () => navigator.clipboard.writeText(getDownloadUrl(file));
+            copyBtn.onclick = () => navigator.clipboard.writeText(useGhfast ? `https://ghfast.top/${file.rawUrl}` : file.rawUrl);
             btnContainer.appendChild(copyBtn);
 
-            if(file.schematio){
-                const jumpBtn = document.createElement("a");
-                jumpBtn.textContent = "3D预览";
-                jumpBtn.href = file.schematio;
-                jumpBtn.target = "_blank";
-                btnContainer.appendChild(jumpBtn);
-            }
-
-            item.appendChild(btnContainer);
-            container.appendChild(item);
-
-            // ghfast切换按钮
             const switchLabel = document.createElement("label");
-            const ghfastToggle = document.createElement("input");
-            const sliderSpan = document.createElement("span");
             switchLabel.className = "switch";
+            const ghfastToggle = document.createElement("input");
             ghfastToggle.type = "checkbox";
-            ghfastToggle.id = `ghfast-${file.name}`;
+            const sliderSpan = document.createElement("span");
             sliderSpan.className = "slider round";
-
             switchLabel.appendChild(ghfastToggle);
             switchLabel.appendChild(sliderSpan);
+            btnContainer.appendChild(switchLabel);
 
             const ghfastText = document.createElement("span");
-            let useGhfast = false;
-            ghfastToggle.checked = false;
-            ghfastText.textContent = ghfastToggle.checked ? "启用GitHub Proxy加速" : "使用GitHub raw原链接";
-
+            ghfastText.textContent = "使用GitHub raw原链接";
             ghfastToggle.addEventListener("change", () => {
                 useGhfast = ghfastToggle.checked;
                 ghfastText.textContent = useGhfast ? "启用GitHub Proxy加速" : "使用GitHub raw原链接";
             });
-
-            btnContainer.appendChild(switchLabel);
             btnContainer.appendChild(ghfastText);
 
-            function getDownloadUrl(file) {
-                return useGhfast ? `https://ghfast.top/${file.rawUrl}` : file.rawUrl;
-            }
+            item.appendChild(btnContainer);
+            container.appendChild(item);
         });
     }
 
-    // 搜索功能
+    // 分页
+    const pageController = renderPage(visibleFiles, renderFiles, container, 6);
+
+    // 更新 sidebar 页码
+    function updateSidebar(curr, total) {
+        pageInput.value = curr;
+        pageInfo.textContent = `/ ${total}`;
+    }
+    pageController.setPageChangeCallback(updateSidebar);
+
+    // 搜索
     searchInput.addEventListener("input", e => {
-        const keyword = e.target.value.trim();
-        container.innerHTML = "";
-        if(keyword === "") renderFiles(allFiles);
-        else filterFiles(keyword);
+        pageController.filter(e.target.value.trim());
     });
 
-    renderFiles(allFiles);
-}
+    // 标签
+    TAGS.forEach(tag => {
+        const btn = document.createElement("button");
+        btn.textContent = tag;
+        btn.addEventListener("click", () => {
+            pageController.filter(tag);
+        });
+        tagContainer.appendChild(btn);
+    });
 
-// 弹窗显示图片
-function showModal(src){
-    const modal = document.createElement("div");
-    modal.className = "modal";
-    modal.style.cssText = `
-        position:fixed; top:0; left:0; width:100%; height:100%;
-        background: rgba(0,0,0,0.7); display:flex; align-items:center; justify-content:center;
-    `;
-    const img = document.createElement("img");
-    img.src = src;
-    img.style.maxWidth = "90%";
-    img.style.maxHeight = "90%";
-    modal.appendChild(img);
-    modal.addEventListener("click", ()=> modal.remove());
-    document.body.appendChild(modal);
+    // 清除筛选
+    clearBtn.addEventListener("click", () => pageController.filter(""));
+
+    // 左右跳页
+    prevBtn.addEventListener("click", () => pageController.show(Math.max(1, pageController.currentPage - 1)));
+    nextBtn.addEventListener("click", () => pageController.show(Math.min(pageController.totalPages, pageController.currentPage + 1)));
+
+    // 输入跳页
+    pageInput.addEventListener("change", () => {
+        let val = parseInt(pageInput.value);
+        if (isNaN(val) || val < 1) val = 1;
+        if (val > pageController.totalPages) val = pageController.totalPages;
+        pageController.show(val);
+    });
 }
 
 loadFiles();
