@@ -11,13 +11,21 @@ export function showModal(src) {
     const closeBtn = document.createElement("button");
     closeBtn.className = "close-btn";
     closeBtn.textContent = "✕";
+
+    // 阻止背景滑动
+    function preventTouchMove(e) { e.preventDefault(); }
+
     closeBtn.onclick = () => {
         modal.remove();
         document.body.style.overflow = "";
+        document.body.removeEventListener("touchmove", preventTouchMove, { passive: false });
     };
     modal.appendChild(closeBtn);
 
+    // 禁止页面滚动
     document.body.style.overflow = "hidden";
+    document.body.addEventListener("touchmove", preventTouchMove, { passive: false });
+
     document.body.appendChild(modal);
 }
 
