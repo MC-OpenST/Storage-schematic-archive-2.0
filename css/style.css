@@ -242,7 +242,7 @@ input:checked + .slider:before { transform: translateX(18px); }
     /* 抽屉式侧栏 */
     .sidebar {
         position: fixed;
-        top: 62px;
+        top: 55px;
         left: 0;
         width: 220px;
         height: calc(100% - 52px);
