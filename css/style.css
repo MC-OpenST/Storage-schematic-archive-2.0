@@ -47,6 +47,7 @@ a { text-decoration: none; color: #fff; }
     background-color: #191919;
     overflow-y: auto;       /* 左侧多内容可滚动 */
     flex-shrink: 0;         /* 不缩小 */
+    -webkit-overflow-scrolling: touch;
 }
 
 .sidebar-section { display: flex; flex-direction: column; gap: 8px; }
