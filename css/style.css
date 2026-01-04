@@ -237,6 +237,8 @@ input:checked + .slider:before { transform: translateX(18px); }
 
 .sidebar-toggle { display: none; }
 
+.sidebar, .card-container {padding-bottom: 54px }
+
 /* ===== 移动端适配 ===== */
 @media (max-width: 768px) {
     .main-container {
