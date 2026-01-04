@@ -94,6 +94,7 @@ a { text-decoration: none; color: #fff; }
     grid-auto-rows: 1.5fr;
     gap: 32px;
     overflow-y: auto;       /* 卡片区独立滚动 */
+    -webkit-overflow-scrolling: touch;
 }
 
 /* 卡片样式调整 */
