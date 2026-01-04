@@ -243,8 +243,13 @@ input:checked + .slider:before { transform: translateX(18px); }
 @media (max-width: 768px) {
     .main-container {
         flex-direction: column;
-        height: auto;
-        overflow: visible;
+        height: calc(100vh - 52px);
+        overflow: hidden;
+    }
+
+    .card-container {
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
     /* 抽屉式侧栏 */
