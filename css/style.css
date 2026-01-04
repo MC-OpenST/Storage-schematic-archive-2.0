@@ -6,6 +6,8 @@ body, html {
     background-color: #1f2223;
     color: #fff;
     scroll-behavior: smooth;
+    overflow: hidden;
+    height: 100%;
 }
 
 a { text-decoration: none; color: #fff; }
@@ -39,6 +41,7 @@ a { text-decoration: none; color: #fff; }
 /* 左侧 Sidebar 固定 */
 .sidebar {
     width: 220px;
+    height: 100%;
     padding: 16px;
     box-sizing: border-box;
     display: flex;
@@ -89,6 +92,7 @@ a { text-decoration: none; color: #fff; }
 .card-container {
     flex: 1;
     padding: 24px;
+    height: 100%;
     box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
