@@ -1,5 +1,19 @@
 [
   {
+    "name": "Item_Chunkloader_1.19[地狱门加载器].litematic",
+    "path": "litematic/Item_Chunkloader_1.19[地狱门加载器].litematic",
+    "preview": "files/images/Item_Chunkloader_1.19[地狱门加载器].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/Item_Chunkloader_1.19[地狱门加载器].litematic",
+    "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/Item_Chunkloader_1.19[地狱门加载器].litematic"
+  },
+  {
+    "name": "LessNoisyMIS[MIS多物品分类].litematic",
+    "path": "litematic/LessNoisyMIS[MIS多物品分类].litematic",
+    "preview": "files/images/LessNoisyMIS[MIS多物品分类].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/LessNoisyMIS[MIS多物品分类].litematic",
+    "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/LessNoisyMIS[MIS多物品分类].litematic"
+  },
+  {
     "name": "MS001_luckeY_Main_Storage[[仓库成品]].litematic",
     "path": "litematic/MS001_luckeY_Main_Storage[[仓库成品]].litematic",
     "preview": "files/images/MS001_luckeY_Main_Storage[[仓库成品]].png",
@@ -61,6 +75,13 @@
     "preview": "files/images/Variable Filter V2.1b-r4[打包机][自适应打包机].png",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/Variable Filter V2.1b-r4[打包机][自适应打包机].zip",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/Variable Filter V2.1b-r4[打包机][自适应打包机].zip"
+  },
+  {
+    "name": "XianyuMIS_lite_v2.09[MIS多物品分类 仓库成品].litematic",
+    "path": "litematic/XianyuMIS_lite_v2.09[MIS多物品分类 仓库成品].litematic",
+    "preview": "files/images/XianyuMIS_lite_v2.09[MIS多物品分类 仓库成品].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/XianyuMIS_lite_v2.09[MIS多物品分类 仓库成品].litematic",
+    "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/XianyuMIS_lite_v2.09[MIS多物品分类 仓库成品].litematic"
   },
   {
     "name": "YAMS V2.3 MB 1.20[仓库成品].litematic",
@@ -187,26 +208,5 @@
     "preview": "files/images/分盒器v5.5[分盒器].png",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/分盒器v5.5[分盒器].litematic",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/分盒器v5.5[分盒器].litematic"
-  },
-  {
-    "name": "单片地狱门加载器1.16+【兼容服务端】[地狱门加载器].litematic",
-    "path": "litematic/单片地狱门加载器1.16+【兼容服务端】[地狱门加载器].litematic",
-    "preview": "files/images/单片地狱门加载器1.16+【兼容服务端】[地狱门加载器].png",
-    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/单片地狱门加载器1.16+【兼容服务端】[地狱门加载器].litematic",
-    "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/单片地狱门加载器1.16+【兼容服务端】[地狱门加载器].litematic"
-  },
-  {
-    "name": "单片地狱门加载器1.19+【兼容服务端】[地狱门加载器].litematic",
-    "path": "litematic/单片地狱门加载器1.19+【兼容服务端】[地狱门加载器].litematic",
-    "preview": "files/images/单片地狱门加载器1.19+【兼容服务端】[地狱门加载器].png",
-    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/单片地狱门加载器1.19+【兼容服务端】[地狱门加载器].litematic",
-    "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/单片地狱门加载器1.19+【兼容服务端】[地狱门加载器].litematic"
-  },
-  {
-    "name": "单片地狱门加载器（地狱部分）【兼容服务端】[地狱门加载器].litematic",
-    "path": "litematic/单片地狱门加载器（地狱部分）【兼容服务端】[地狱门加载器].litematic",
-    "preview": "files/images/单片地狱门加载器（地狱部分）【兼容服务端】[地狱门加载器].png",
-    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/单片地狱门加载器（地狱部分）【兼容服务端】[地狱门加载器].litematic",
-    "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/单片地狱门加载器（地狱部分）【兼容服务端】[地狱门加载器].litematic"
   }
 ]

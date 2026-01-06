@@ -7,6 +7,13 @@
     "schematio": null
   },
   {
+    "name": "XianyuMIS_lite_v2.09[MIS多物品分类 仓库成品].png",
+    "path": "images/XianyuMIS_lite_v2.09[MIS多物品分类 仓库成品].png",
+    "preview": "files/images/XianyuMIS_lite_v2.09[MIS多物品分类 仓库成品].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/XianyuMIS_lite_v2.09[MIS多物品分类 仓库成品].png",
+    "schematio": null
+  },
+  {
     "name": "YAMS V2.3 MB 1.20[仓库成品].png",
     "path": "images/YAMS V2.3 MB 1.20[仓库成品].png",
     "preview": "files/images/YAMS V2.3 MB 1.20[仓库成品].png",
@@ -196,17 +203,10 @@
     "schematio": null
   },
   {
-    "name": "水流收集四边形大宗 by Yi_Breeze[四边形大宗][编码相关].png",
-    "path": "images/水流收集四边形大宗 by Yi_Breeze[四边形大宗][编码相关].png",
-    "preview": "files/images/水流收集四边形大宗 by Yi_Breeze[四边形大宗][编码相关].png",
-    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/水流收集四边形大宗 by Yi_Breeze[四边形大宗][编码相关].png",
-    "schematio": null
-  },
-  {
-    "name": "盒子南瓜地狱门加载器 全锁  by麋鹿[地狱门加载器].png",
-    "path": "images/盒子南瓜地狱门加载器 全锁  by麋鹿[地狱门加载器].png",
-    "preview": "files/images/盒子南瓜地狱门加载器 全锁  by麋鹿[地狱门加载器].png",
-    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/盒子南瓜地狱门加载器 全锁  by麋鹿[地狱门加载器].png",
+    "name": "曼波mis_v2.02_XianyuMISv2_revisited[MIS多物品分类 仓库成品].png",
+    "path": "images/曼波mis_v2.02_XianyuMISv2_revisited[MIS多物品分类 仓库成品].png",
+    "preview": "files/images/曼波mis_v2.02_XianyuMISv2_revisited[MIS多物品分类 仓库成品].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/images/曼波mis_v2.02_XianyuMISv2_revisited[MIS多物品分类 仓库成品].png",
     "schematio": null
   }
 ]

@@ -1,5 +1,26 @@
 [
   {
+    "name": "单片地狱门加载器1.16+【兼容服务端】[地狱门加载器].litematic",
+    "path": "litematic/单片地狱门加载器1.16+【兼容服务端】[地狱门加载器].litematic",
+    "preview": "files/images/单片地狱门加载器1.16+【兼容服务端】[地狱门加载器].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/单片地狱门加载器1.16+【兼容服务端】[地狱门加载器].litematic",
+    "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/单片地狱门加载器1.16+【兼容服务端】[地狱门加载器].litematic"
+  },
+  {
+    "name": "单片地狱门加载器1.19+【兼容服务端】[地狱门加载器].litematic",
+    "path": "litematic/单片地狱门加载器1.19+【兼容服务端】[地狱门加载器].litematic",
+    "preview": "files/images/单片地狱门加载器1.19+【兼容服务端】[地狱门加载器].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/单片地狱门加载器1.19+【兼容服务端】[地狱门加载器].litematic",
+    "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/单片地狱门加载器1.19+【兼容服务端】[地狱门加载器].litematic"
+  },
+  {
+    "name": "单片地狱门加载器（地狱部分）【兼容服务端】[地狱门加载器].litematic",
+    "path": "litematic/单片地狱门加载器（地狱部分）【兼容服务端】[地狱门加载器].litematic",
+    "preview": "files/images/单片地狱门加载器（地狱部分）【兼容服务端】[地狱门加载器].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/单片地狱门加载器（地狱部分）【兼容服务端】[地狱门加载器].litematic",
+    "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/单片地狱门加载器（地狱部分）【兼容服务端】[地狱门加载器].litematic"
+  },
+  {
     "name": "南瓜头地狱门加载器修正PBCL_V2.1_Pair[地狱门加载器].litematic",
     "path": "litematic/南瓜头地狱门加载器修正PBCL_V2.1_Pair[地狱门加载器].litematic",
     "preview": "files/images/南瓜头地狱门加载器修正PBCL_V2.1_Pair[地狱门加载器].png",
@@ -47,6 +68,13 @@
     "preview": "files/images/无延迟比较器链by erraVoxel[编码相关].png",
     "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/无延迟比较器链by erraVoxel[编码相关].litematic",
     "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/无延迟比较器链by erraVoxel[编码相关].litematic"
+  },
+  {
+    "name": "曼波mis_v2.02_XianyuMISv2_revisited[MIS多物品分类 仓库成品].litematic",
+    "path": "litematic/曼波mis_v2.02_XianyuMISv2_revisited[MIS多物品分类 仓库成品].litematic",
+    "preview": "files/images/曼波mis_v2.02_XianyuMISv2_revisited[MIS多物品分类 仓库成品].png",
+    "rawUrl": "https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/曼波mis_v2.02_XianyuMISv2_revisited[MIS多物品分类 仓库成品].litematic",
+    "schematio": "https://schemat.io/view?url=https://raw.githubusercontent.com/MC-OpenST/Storage-schematic-archive-2.0/main/files/litematic/曼波mis_v2.02_XianyuMISv2_revisited[MIS多物品分类 仓库成品].litematic"
   },
   {
     "name": "水流收集四边形大宗 by Yi_Breeze[四边形大宗][编码相关].litematic",
